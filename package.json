@@ -1,0 +1,17 @@
+{
+  "name": "ture-scraper",
+  "version": "1.0.0",
+  "description": "Scraper pentru ture montane organizate în România",
+  "main": "index.js",
+  "scripts": {
+    "scrape": "node index.js",
+    "scrape:terramont": "node scrapers/terramont.js"
+  },
+  "keywords": ["scraper", "hiking", "romania", "mountains"],
+  "author": "SIG212",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^2.7.0"
+  }
+}

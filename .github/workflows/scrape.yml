@@ -1,0 +1,43 @@
+name: Scrape Ture Montane
+
+on:
+  schedule:
+    # Rulează în fiecare luni la 06:00 UTC (09:00 ora României)
+    - cron: '0 6 * * 1'
+  
+  # Permite rulare manuală
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci || npm install
+      
+      - name: Run scraper
+        run: npm run scrape
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet output/ture.json || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push if changed
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add output/ture.json
+          git commit -m "🏔️ Actualizare ture $(date +'%Y-%m-%d %H:%M')"
+          git push
