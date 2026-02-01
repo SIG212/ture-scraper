@@ -8,6 +8,139 @@ const { scrapeCarCluj } = require('./scrapers/carcluj');
 // const { scrapeMontania } = require('./scrapers/montania');
 
 const OUTPUT_FILE = path.join(__dirname, 'output', 'ture.json');
+const NEWSLETTER_FILE = path.join(__dirname, 'output', 'newsletter.txt');
+
+// Funcție pentru a genera newsletter-ul formatat
+function generateNewsletter(ture) {
+  const dataAcum = new Date().toLocaleDateString('ro-RO', { 
+    day: 'numeric', 
+    month: 'long', 
+    year: 'numeric' 
+  });
+  
+  // Separă ture plătite vs gratuite
+  const turePlatite = ture.filter(t => t.pret && t.pret !== '0' && t.pret !== '0 RON');
+  const tureGratuite = ture.filter(t => !t.pret || t.pret === '0' || t.pret === '0 RON');
+  
+  // Grupează pe dificultate
+  const peIncepator = ture.filter(t => 
+    t.dificultate && (t.dificultate.toLowerCase().includes('începător') || t.dificultate.toLowerCase().includes('incepator'))
+  );
+  const peIntermediar = ture.filter(t => 
+    t.dificultate && t.dificultate.toLowerCase().includes('intermediar') && !t.dificultate.toLowerCase().includes('începător')
+  );
+  const peExperimentat = ture.filter(t => 
+    t.dificultate && t.dificultate.toLowerCase().includes('experimentat')
+  );
+  
+  // Formatare tură pentru secțiunea detaliată
+  const formatTuraDetaliat = (t) => {
+    let result = `## ${t.titlu}\n`;
+    result += `🏔️ ${t.zona || 'N/A'}`;
+    if (t.dificultate) result += ` | 📊 ${t.dificultate}`;
+    if (t.pret) result += ` | 💰 ${t.pret}`;
+    result += `\n`;
+    if (t.perioada) result += `📅 ${t.perioada}\n`;
+    result += `🔗 ${t.link}\n`;
+    return result;
+  };
+  
+  // Formatare tură pentru lista scurtă
+  const formatTuraScurt = (t) => {
+    let pret = t.pret ? `(${t.pret})` : '(gratis)';
+    let data = t.perioada || '';
+    return `• ${t.titlu} ${pret} - ${data}`;
+  };
+  
+  // Construiește newsletter-ul
+  let newsletter = `🏔️ UNDE MERGEM PE MUNTE?
+${dataAcum}
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+📍 QUICK LINKS
+
+• Ture cu ghid (plătite): ${turePlatite.length} ture
+• Ture gratuite: ${tureGratuite.length} ture
+• 🟢 Începător: ${peIncepator.length} ture
+• 🟡 Intermediar: ${peIntermediar.length} ture
+• 🔴 Experimentat: ${peExperimentat.length} ture
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 TURE CU GHID (PLĂTITE)
+
+`;
+
+  if (turePlatite.length > 0) {
+    turePlatite.forEach(t => {
+      newsletter += formatTuraDetaliat(t) + '\n---\n\n';
+    });
+  } else {
+    newsletter += 'Nicio tură plătită în această perioadă.\n\n';
+  }
+
+  newsletter += `━━━━━━━━━━━━━━━━━━━━━━━
+
+🆓 TURE GRATUITE / ÎNTRE PRIETENI
+
+`;
+
+  if (tureGratuite.length > 0) {
+    tureGratuite.forEach(t => {
+      newsletter += formatTuraDetaliat(t) + '\n---\n\n';
+    });
+  } else {
+    newsletter += 'Nicio tură gratuită în această perioadă.\n\n';
+  }
+
+  newsletter += `━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 PE DIFICULTATE
+
+### 🟢 ÎNCEPĂTOR
+`;
+  if (peIncepator.length > 0) {
+    peIncepator.forEach(t => {
+      newsletter += formatTuraScurt(t) + '\n';
+    });
+  } else {
+    newsletter += 'Nicio tură pentru începători.\n';
+  }
+
+  newsletter += `
+### 🟡 INTERMEDIAR
+`;
+  if (peIntermediar.length > 0) {
+    peIntermediar.forEach(t => {
+      newsletter += formatTuraScurt(t) + '\n';
+    });
+  } else {
+    newsletter += 'Nicio tură intermediară.\n';
+  }
+
+  newsletter += `
+### 🔴 EXPERIMENTAT
+`;
+  if (peExperimentat.length > 0) {
+    peExperimentat.forEach(t => {
+      newsletter += formatTuraScurt(t) + '\n';
+    });
+  } else {
+    newsletter += 'Nicio tură pentru experimentați.\n';
+  }
+
+  newsletter += `
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Drum bun pe munte! 🥾
+
+Verifică condițiile meteo înainte de plecare:
+🌤️ MergLaMunte.ro
+`;
+
+  return newsletter;
+}
 
 async function runAllScrapers() {
   console.log('🚀 Start scraping ture montane...\n');
@@ -94,6 +227,11 @@ async function runAllScrapers() {
   // Scrie JSON
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2), 'utf8');
   console.log(`\n✅ Output salvat în: ${OUTPUT_FILE}`);
+  
+  // Generează și salvează newsletter-ul formatat
+  const newsletterContent = generateNewsletter(toateTurele);
+  fs.writeFileSync(NEWSLETTER_FILE, newsletterContent, 'utf8');
+  console.log(`✅ Newsletter salvat în: ${NEWSLETTER_FILE}`);
   
   return output;
 }
