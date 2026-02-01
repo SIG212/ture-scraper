@@ -139,45 +139,51 @@ async function fetchTuraDetails(url) {
     let perioada = null;
     let ghid = null;
     
-    // Caută în structura paginii - Terramont folosește un format consistent
-    // Preț
-    $('*').each((i, el) => {
-      const text = $(el).text().trim();
-      
-      // Caută prețul (format: "367 RON" sau "1.200 RON")
-      if (!pret) {
-        const pretMatch = text.match(/(\d{1,3}(?:[.,]\d{3})*)\s*(?:RON|lei)/i);
-        if (pretMatch) {
-          // Verifică dacă e în contextul corect (nu e un preț random din pagină)
-          const parent = $(el).parent().text().toLowerCase();
-          if (parent.includes('preț') || parent.includes('pret') || parent.includes('cost')) {
-            pret = pretMatch[1].replace('.', '').replace(',', '') + ' RON';
-          }
-        }
-      }
-    });
+    const pageText = $('body').text();
     
-    // Metodă alternativă - caută direct după label "Preț"
+    // Metoda 1: Caută pattern "Preț" urmat de număr și RON/lei
+    // Formatul pe site: "Preț\n\n367 RON" sau "Preț 196 RON"
+    const pretMatch1 = pageText.match(/Preț\s*[\n\s]*(\d{2,4})\s*(?:RON|lei)/i);
+    if (pretMatch1) {
+      pret = pretMatch1[1] + ' RON';
+    }
+    
+    // Metoda 2: Caută "XXX lei" sau "XXX RON" standalone (minim 50, max 9999)
     if (!pret) {
-      const pageText = $('body').text();
-      const pretMatch = pageText.match(/Preț\s*[:\s]*(\d{1,3}(?:[.,]\d{3})*)\s*(?:RON|lei)/i);
-      if (pretMatch) {
-        pret = pretMatch[1].replace('.', '').replace(',', '') + ' RON';
+      const pretMatch2 = pageText.match(/\b(\d{2,4})\s*(?:lei|RON)\b/i);
+      if (pretMatch2 && parseInt(pretMatch2[1]) >= 50) {
+        pret = pretMatch2[1] + ' RON';
       }
     }
     
-    // Perioada
-    const perioadaMatch = $('body').text().match(/Perioada\s*[:\s]*([0-9]{1,2}(?:\s*[-–]\s*[0-9]{1,2})?\s+[a-zA-Zăîâșț]+)/i);
+    // Metoda 3: Caută în elementele cu class care conțin "price" sau "pret"
+    if (!pret) {
+      $('[class*="price"], [class*="pret"], [class*="cost"]').each((i, el) => {
+        if (!pret) {
+          const text = $(el).text();
+          const match = text.match(/(\d{2,4})\s*(?:lei|RON)/i);
+          if (match && parseInt(match[1]) >= 50) {
+            pret = match[1] + ' RON';
+          }
+        }
+      });
+    }
+    
+    // Perioada - caută după "Perioada" label
+    const perioadaMatch = pageText.match(/Perioada\s*[\n\s]*([0-9]{1,2}(?:\s*[-–]\s*[0-9]{1,2})?\s+[A-Za-zĂÎÂȘȚăîâșț]+)/i);
     if (perioadaMatch) {
       perioada = perioadaMatch[1].trim();
     }
     
-    // Ghid
-    const ghidMatch = $('body').text().match(/Ghid\s*[:\s]*([A-Za-zăîâșțĂÎÂȘȚ]+(?:\s+[A-Za-zăîâșțĂÎÂȘȚ]+)?)\s*[-–]?\s*(\d{4}\s*\d{3}\s*\d{3})?/i);
+    // Ghid - caută pattern "Ghid" urmat de nume și telefon
+    const ghidMatch = pageText.match(/Ghid\s*[\n\s]*([0-9]{10})\s+([A-Za-zăîâșțĂÎÂȘȚ]+)/i);
     if (ghidMatch) {
-      ghid = ghidMatch[1].trim();
-      if (ghidMatch[2]) {
-        ghid += ' - ' + ghidMatch[2].trim();
+      ghid = ghidMatch[2] + ' - ' + ghidMatch[1];
+    } else {
+      // Alternativ: Ghid Nume - telefon
+      const ghidMatch2 = pageText.match(/Ghid[:\s]+([A-Za-zăîâșțĂÎÂȘȚ]+(?:\s+[A-Za-zăîâșțĂÎÂȘȚ]+)?)\s*[-–]?\s*([0-9\s]{10,})/i);
+      if (ghidMatch2) {
+        ghid = ghidMatch2[1].trim() + ' - ' + ghidMatch2[2].replace(/\s/g, '');
       }
     }
     
@@ -298,6 +304,10 @@ async function scrapeTerramont() {
       tura.pret = details.pret;
       tura.perioada = details.perioada;
       tura.ghid = details.ghid;
+      
+      if (details.pret) {
+        console.log(`         💰 ${details.pret}`);
+      }
       
       // Mică pauză între requesturi pentru a nu supraîncărca serverul
       await new Promise(resolve => setTimeout(resolve, 500));
