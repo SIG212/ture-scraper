@@ -3,8 +3,14 @@
 Salut!
 
 Săptămâna asta am găsit **42 ture** organizate în munții României:
-- 💰 **25** ture cu ghid (plătite)
-- 🆓 **17** ture gratuite
+
+## 📍 Quick Links
+
+- 💰 [Ture cu ghid (plătite)](#ture-cu-ghid-plătite) - **25** ture
+- 🆓 [Ture gratuite](#ture-gratuite) - **17** ture
+- 🟢 [Începător](#-începător-11-ture) - **11** ture
+- 🟡 [Intermediar](#-intermediar-12-ture) - **12** ture
+- 🔴 [Experimentat](#-experimentat-11-ture) - **11** ture
 
 ---
 
