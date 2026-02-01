@@ -3,6 +3,41 @@ const cheerio = require('cheerio');
 
 const TERRAMONT_CALENDAR_URL = 'https://terramont.ro/ture-organizate-prin-romania-si-extern/calendar-ture/calendar-ture-romania-drumetie/';
 
+// URL-uri și titluri de exclus (nu sunt ture reale)
+const EXCLUDE_URLS = [
+  '/echipamente-montane/',
+  '/ghid-de-calatorie/',
+  '/personalizeaza-ti-tura/',
+  '/pregatire-si-organizare/',
+  '/siguranta-pe-munte/',
+  '/drumetie-romania/',
+  '/contact/',
+  '/shop/',
+  '/povestea-noastra/'
+];
+
+const EXCLUDE_TITLES = [
+  'echipamente montane',
+  'ghid de călătorie',
+  'personalizează-ți tura',
+  'pregătire și organizare',
+  'siguranță pe munte',
+  'drumeție românia'
+];
+
+function shouldExclude(url, titlu) {
+  // Verifică URL
+  for (const excludeUrl of EXCLUDE_URLS) {
+    if (url.includes(excludeUrl)) return true;
+  }
+  // Verifică titlu
+  const titluLower = titlu.toLowerCase();
+  for (const excludeTitle of EXCLUDE_TITLES) {
+    if (titluLower === excludeTitle || titluLower.includes(excludeTitle)) return true;
+  }
+  return false;
+}
+
 // Mapare zone din titlu
 const ZONE_KEYWORDS = {
   'bucegi': 'Bucegi',
@@ -136,7 +171,7 @@ async function scrapeTerramont() {
           // Curăță titlul
           titlu = titlu.replace(/\s+/g, ' ').trim();
           
-          if (titlu && titlu.length > 5) {
+          if (titlu && titlu.length > 5 && !shouldExclude(href, titlu)) {
             const tura = {
               titlu: titlu,
               zona: extractZona(titlu),
@@ -169,7 +204,7 @@ async function scrapeTerramont() {
         
         titlu = titlu.replace(/\s+/g, ' ').trim();
         
-        if (href && titlu && titlu.length > 10) {
+        if (href && titlu && titlu.length > 10 && !shouldExclude(href, titlu)) {
           const exists = ture.some(t => t.link === href);
           if (!exists) {
             ture.push({
