@@ -31,7 +31,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet output/ture.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet output/ || echo "changed=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push if changed
         if: steps.changes.outputs.changed == 'true'
