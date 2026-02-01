@@ -8,9 +8,9 @@ const { scrapeCarCluj } = require('./scrapers/carcluj');
 // const { scrapeMontania } = require('./scrapers/montania');
 
 const OUTPUT_FILE = path.join(__dirname, 'output', 'ture.json');
-const NEWSLETTER_FILE = path.join(__dirname, 'output', 'newsletter.txt');
+const NEWSLETTER_FILE = path.join(__dirname, 'output', 'newsletter.html');
 
-// Funcție pentru a genera newsletter-ul formatat
+// Funcție pentru a genera newsletter-ul formatat HTML
 function generateNewsletter(ture) {
   const dataAcum = new Date().toLocaleDateString('ro-RO', { 
     day: 'numeric', 
@@ -33,110 +33,139 @@ function generateNewsletter(ture) {
     t.dificultate && t.dificultate.toLowerCase().includes('experimentat')
   );
   
-  // Formatare tură pentru secțiunea detaliată
+  // Formatare tură pentru secțiunea detaliată (HTML)
   const formatTuraDetaliat = (t) => {
-    let result = `## ${t.titlu}\n`;
-    result += `🏔️ ${t.zona || 'N/A'}`;
-    if (t.dificultate) result += ` | 📊 ${t.dificultate}`;
-    if (t.pret) result += ` | 💰 ${t.pret}`;
-    result += `\n`;
-    if (t.perioada) result += `📅 ${t.perioada}\n`;
-    result += `🔗 ${t.link}\n`;
-    return result;
+    let html = `<div style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745;">`;
+    html += `<h3 style="margin: 0 0 10px 0; color: #333;">${t.titlu}</h3>`;
+    html += `<p style="margin: 5px 0; color: #666;">`;
+    html += `🏔️ <strong>${t.zona || 'N/A'}</strong>`;
+    if (t.dificultate) html += ` &nbsp;|&nbsp; 📊 ${t.dificultate}`;
+    if (t.pret) html += ` &nbsp;|&nbsp; 💰 <strong style="color: #28a745;">${t.pret}</strong>`;
+    html += `</p>`;
+    if (t.perioada) html += `<p style="margin: 5px 0; color: #666;">📅 ${t.perioada}</p>`;
+    html += `<a href="${t.link}" style="color: #007bff; text-decoration: none;">🔗 Detalii și înscriere →</a>`;
+    html += `</div>`;
+    return html;
   };
   
-  // Formatare tură pentru lista scurtă
+  // Formatare tură pentru lista scurtă (HTML)
   const formatTuraScurt = (t) => {
-    let pret = t.pret ? `(${t.pret})` : '(gratis)';
-    let data = t.perioada || '';
-    return `• ${t.titlu} ${pret} - ${data}`;
+    let pret = t.pret ? `<span style="color: #28a745;">(${t.pret})</span>` : '<span style="color: #6c757d;">(gratis)</span>';
+    let data = t.perioada ? ` - ${t.perioada}` : '';
+    return `<li style="margin: 8px 0;"><a href="${t.link}" style="color: #333; text-decoration: none;">${t.titlu}</a> ${pret}${data}</li>`;
   };
   
-  // Construiește newsletter-ul
-  let newsletter = `🏔️ UNDE MERGEM PE MUNTE?
-${dataAcum}
+  // Construiește newsletter-ul HTML
+  let newsletter = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #333; line-height: 1.6;">
 
-━━━━━━━━━━━━━━━━━━━━━━━
+<div style="text-align: center; margin-bottom: 30px;">
+  <h1 style="color: #2d5016; margin: 0;">🏔️ UNDE MERGEM PE MUNTE?</h1>
+  <p style="color: #666; margin: 10px 0;">${dataAcum}</p>
+</div>
 
-📍 QUICK LINKS
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+  <h2 style="margin: 0 0 15px 0; font-size: 18px;">📍 QUICK LINKS</h2>
+  <p style="margin: 5px 0;">• <a href="#platite" style="color: white;">Ture cu ghid (plătite)</a>: <strong>${turePlatite.length}</strong> ture</p>
+  <p style="margin: 5px 0;">• <a href="#gratuite" style="color: white;">Ture gratuite</a>: <strong>${tureGratuite.length}</strong> ture</p>
+  <p style="margin: 5px 0;">• 🟢 <a href="#incepator" style="color: white;">Începător</a>: <strong>${peIncepator.length}</strong> ture</p>
+  <p style="margin: 5px 0;">• 🟡 <a href="#intermediar" style="color: white;">Intermediar</a>: <strong>${peIntermediar.length}</strong> ture</p>
+  <p style="margin: 5px 0;">• 🔴 <a href="#experimentat" style="color: white;">Experimentat</a>: <strong>${peExperimentat.length}</strong> ture</p>
+</div>
 
-• Ture cu ghid (plătite): ${turePlatite.length} ture
-• Ture gratuite: ${tureGratuite.length} ture
-• 🟢 Începător: ${peIncepator.length} ture
-• 🟡 Intermediar: ${peIntermediar.length} ture
-• 🔴 Experimentat: ${peExperimentat.length} ture
-
-━━━━━━━━━━━━━━━━━━━━━━━
-
-💰 TURE CU GHID (PLĂTITE)
-
+<div id="platite" style="margin-bottom: 30px;">
+  <h2 style="color: #2d5016; border-bottom: 2px solid #28a745; padding-bottom: 10px;">💰 TURE CU GHID (PLĂTITE)</h2>
 `;
 
   if (turePlatite.length > 0) {
     turePlatite.forEach(t => {
-      newsletter += formatTuraDetaliat(t) + '\n---\n\n';
+      newsletter += formatTuraDetaliat(t);
     });
   } else {
-    newsletter += 'Nicio tură plătită în această perioadă.\n\n';
+    newsletter += '<p style="color: #666;">Nicio tură plătită în această perioadă.</p>';
   }
 
-  newsletter += `━━━━━━━━━━━━━━━━━━━━━━━
+  newsletter += `</div>
 
-🆓 TURE GRATUITE / ÎNTRE PRIETENI
-
+<div id="gratuite" style="margin-bottom: 30px;">
+  <h2 style="color: #2d5016; border-bottom: 2px solid #17a2b8; padding-bottom: 10px;">🆓 TURE GRATUITE / ÎNTRE PRIETENI</h2>
 `;
 
   if (tureGratuite.length > 0) {
     tureGratuite.forEach(t => {
-      newsletter += formatTuraDetaliat(t) + '\n---\n\n';
+      newsletter += formatTuraDetaliat(t);
     });
   } else {
-    newsletter += 'Nicio tură gratuită în această perioadă.\n\n';
+    newsletter += '<p style="color: #666;">Nicio tură gratuită în această perioadă.</p>';
   }
 
-  newsletter += `━━━━━━━━━━━━━━━━━━━━━━━
+  newsletter += `</div>
 
-📊 PE DIFICULTATE
-
-### 🟢 ÎNCEPĂTOR
+<div style="margin-bottom: 30px;">
+  <h2 style="color: #2d5016; border-bottom: 2px solid #6c757d; padding-bottom: 10px;">📊 PE DIFICULTATE</h2>
+  
+  <div id="incepator" style="margin-bottom: 20px;">
+    <h3 style="color: #28a745;">🟢 ÎNCEPĂTOR</h3>
+    <ul style="list-style: none; padding: 0;">
 `;
   if (peIncepator.length > 0) {
     peIncepator.forEach(t => {
-      newsletter += formatTuraScurt(t) + '\n';
+      newsletter += formatTuraScurt(t);
     });
   } else {
-    newsletter += 'Nicio tură pentru începători.\n';
+    newsletter += '<li style="color: #666;">Nicio tură pentru începători.</li>';
   }
 
   newsletter += `
-### 🟡 INTERMEDIAR
+    </ul>
+  </div>
+  
+  <div id="intermediar" style="margin-bottom: 20px;">
+    <h3 style="color: #ffc107;">🟡 INTERMEDIAR</h3>
+    <ul style="list-style: none; padding: 0;">
 `;
   if (peIntermediar.length > 0) {
     peIntermediar.forEach(t => {
-      newsletter += formatTuraScurt(t) + '\n';
+      newsletter += formatTuraScurt(t);
     });
   } else {
-    newsletter += 'Nicio tură intermediară.\n';
+    newsletter += '<li style="color: #666;">Nicio tură intermediară.</li>';
   }
 
   newsletter += `
-### 🔴 EXPERIMENTAT
+    </ul>
+  </div>
+  
+  <div id="experimentat" style="margin-bottom: 20px;">
+    <h3 style="color: #dc3545;">🔴 EXPERIMENTAT</h3>
+    <ul style="list-style: none; padding: 0;">
 `;
   if (peExperimentat.length > 0) {
     peExperimentat.forEach(t => {
-      newsletter += formatTuraScurt(t) + '\n';
+      newsletter += formatTuraScurt(t);
     });
   } else {
-    newsletter += 'Nicio tură pentru experimentați.\n';
+    newsletter += '<li style="color: #666;">Nicio tură pentru experimentați.</li>';
   }
 
   newsletter += `
-━━━━━━━━━━━━━━━━━━━━━━━
+    </ul>
+  </div>
+</div>
 
-Drum bun pe munte! 🥾
+<div style="text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px; margin-top: 30px;">
+  <p style="font-size: 24px; margin: 0 0 10px 0;">Drum bun pe munte! 🥾</p>
+  <p style="color: #666; margin: 0;">Verifică condițiile meteo înainte de plecare:</p>
+  <a href="https://merglamunte.ro" style="display: inline-block; margin-top: 15px; padding: 12px 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: bold;">🌤️ MergLaMunte.ro</a>
+</div>
 
-Verifică condițiile meteo înainte de plecare:
-🌤️ MergLaMunte.ro
+</body>
+</html>
 `;
 
   return newsletter;
