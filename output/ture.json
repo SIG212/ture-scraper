@@ -1,10 +1,236 @@
 {
-  "ultima_actualizare": "2026-02-01T11:26:52.589Z",
-  "total_ture": 0,
-  "surse": [],
+  "ultima_actualizare": "2026-02-01T11:33:06.457Z",
+  "total_ture": 26,
+  "surse": [
+    "Terramont"
+  ],
   "statistici": {
-    "pe_sursa": {},
-    "pe_zona": {}
+    "pe_sursa": {
+      "Terramont": 26
+    },
+    "pe_zona": {
+      "Călimani": 1,
+      "Trascău": 1,
+      "Retezat": 5,
+      "Rodnei": 1,
+      "Ciucaș": 1,
+      "Via Transilvanica": 4,
+      "Făgăraș": 3,
+      "Ceahlău": 1,
+      "Cindrel": 1,
+      "Altele": 6,
+      "Bucegi": 1,
+      "Hășmaș": 1
+    }
   },
-  "ture": []
+  "ture": [
+    {
+      "titlu": "Drumeție începător – intermediar: Călimani, Scaunul Domnului",
+      "zona": "Călimani",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-calimani-scaunul-domnului/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Circuit Poarta Zmeului, Trascău",
+      "zona": "Trascău",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-circuit-poarta-zmeilor-trascau/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Munții Retezat – Cabana Gențiana, Cabana Pietrele",
+      "zona": "Retezat",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-muntii-retezat-cabana-gentiana-cabana-pietrele/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Rodnei, Vârful Cobășel și Roșu",
+      "zona": "Rodnei",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-muntii-rodnei-cobasel-rosu/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție începător: Munții și Cabana Ciucaș",
+      "zona": "Ciucaș",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-muntii-cabana-ciucas/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție începător: Via Transilvanica, Mălâncrav – Biertan",
+      "zona": "Via Transilvanica",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-via-transilvanica-malancrav-biertan/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție intermediar – experimentat: Făgăraș, Vârful și Cabana Suru",
+      "zona": "Făgăraș",
+      "dificultate": "Intermediar-Experimentat",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-fagaras-cabana-suru/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție intermediar – experimentat: Retezat, Vârful Peleaga",
+      "zona": "Retezat",
+      "dificultate": "Intermediar-Experimentat",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-retezat-varful-peleaga/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție intermediar: Munții Făgăraș, Cabana Negoiu și Muchia Șerbota",
+      "zona": "Făgăraș",
+      "dificultate": "Intermediar",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-muntii-fagaras-muchia-serbota/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție intermediar: Răsărit în Ceahlău, Vârful Toaca și Cabana Dochia",
+      "zona": "Ceahlău",
+      "dificultate": "Intermediar",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-ceahlau-varful-toaca/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție pe rachete de zăpadă: Munții Cindrel, Vârful Rozdești",
+      "zona": "Cindrel",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-vf-rozdesti-muntii-cindrel/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție România",
+      "zona": "Altele",
+      "dificultate": null,
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-romania/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție Via Transilvanica Saschiz – Criț",
+      "zona": "Via Transilvanica",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-via-transilvanica-saschiz-crit/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție: Munții Bucegi – Cabana Mălăiești și Piatra Craiului – Cabana Curmătura",
+      "zona": "Bucegi",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-in-muntii-bucegi-cabana-malaiesti-cabana-curmatura-piatra-craiului/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție: Munții Făgăraș, Vf. Lespezi",
+      "zona": "Făgăraș",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-vf-lespezi-muntii-fagaras/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție: Munții Hășmaș, Cabana Piatra Singurațică și Vf. Hășmașul Mare",
+      "zona": "Hășmaș",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/muntii-hasmas-piatra-singuratica-hasmasul-mare/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție: Munții Retezat – Lacul Ștevia",
+      "zona": "Retezat",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-lacul-stevia-retezat/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție: Munții Retezat, Cabana Gențiana – Lacul Pietrele",
+      "zona": "Retezat",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-retezat-cabana-gentiana-lacul-pietrele/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție: Munții Retezat, Piatra Iorgovanului și Oslea",
+      "zona": "Retezat",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-retezat-piatra-iorgovanului-oslea/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție: Via Transilvanica – Brădețelu – Câmpu Cetății",
+      "zona": "Via Transilvanica",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-via-transilvanica-bradetelu-campu-cetatii/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Drumeție: Via Transilvanica – Cașva – Brădețelu",
+      "zona": "Via Transilvanica",
+      "dificultate": null,
+      "luna": "Februarie",
+      "link": "https://terramont.ro/drumetie-via-transilvanica-casva-bradetelu/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Echipamente montane",
+      "zona": "Altele",
+      "dificultate": null,
+      "luna": null,
+      "link": "https://terramont.ro/ghid-de-calatorii-aventura-informatii-utile-pe-munte/echipamente-montane/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Ghid de călătorie",
+      "zona": "Altele",
+      "dificultate": null,
+      "luna": null,
+      "link": "https://terramont.ro/ghid-de-calatorii-aventura-informatii-utile-pe-munte/ghid-de-calatorie/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Personalizează-ți tura",
+      "zona": "Altele",
+      "dificultate": null,
+      "luna": null,
+      "link": "https://terramont.ro/personalizeaza-ti-tura/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Pregătire și organizare",
+      "zona": "Altele",
+      "dificultate": null,
+      "luna": null,
+      "link": "https://terramont.ro/ghid-de-calatorii-aventura-informatii-utile-pe-munte/pregatire-si-organizare/",
+      "sursa": "Terramont"
+    },
+    {
+      "titlu": "Siguranță pe munte",
+      "zona": "Altele",
+      "dificultate": null,
+      "luna": null,
+      "link": "https://terramont.ro/ghid-de-calatorii-aventura-informatii-utile-pe-munte/siguranta-pe-munte/",
+      "sursa": "Terramont"
+    }
+  ]
 }
