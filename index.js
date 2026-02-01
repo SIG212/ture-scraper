@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { scrapeTerramont } = require('./scrapers/terramont');
+const { scrapeCarCluj } = require('./scrapers/carcluj');
 
 // Adaugă aici alte surse când le implementezi
 // const { scrapeHaiLaMunte } = require('./scrapers/hailamunte');
@@ -20,6 +21,14 @@ async function runAllScrapers() {
     toateTurele.push(...tureTerramont);
   } catch (error) {
     console.error('Eroare Terramont:', error);
+  }
+  
+  // CAR Cluj
+  try {
+    const tureCarCluj = await scrapeCarCluj();
+    toateTurele.push(...tureCarCluj);
+  } catch (error) {
+    console.error('Eroare CAR Cluj:', error);
   }
   
   // Adaugă aici alte surse
