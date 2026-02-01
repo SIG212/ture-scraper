@@ -225,8 +225,14 @@ function generateSubstack(ture) {
 Salut!
 
 Săptămâna asta am găsit **${ture.length} ture** organizate în munții României:
-- 💰 **${turePlatite.length}** ture cu ghid (plătite)
-- 🆓 **${tureGratuite.length}** ture gratuite
+
+## 📍 Quick Links
+
+- 💰 [Ture cu ghid (plătite)](#ture-cu-ghid-plătite) - **${turePlatite.length}** ture
+- 🆓 [Ture gratuite](#ture-gratuite) - **${tureGratuite.length}** ture
+- 🟢 [Începător](#-începător-${peIncepator.length}-ture) - **${peIncepator.length}** ture
+- 🟡 [Intermediar](#-intermediar-${peIntermediar.length}-ture) - **${peIntermediar.length}** ture
+- 🔴 [Experimentat](#-experimentat-${peExperimentat.length}-ture) - **${peExperimentat.length}** ture
 
 ---
 
