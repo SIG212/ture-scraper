@@ -9,6 +9,7 @@ const { scrapeCarCluj } = require('./scrapers/carcluj');
 
 const OUTPUT_FILE = path.join(__dirname, 'output', 'ture.json');
 const NEWSLETTER_FILE = path.join(__dirname, 'output', 'newsletter.html');
+const SUBSTACK_FILE = path.join(__dirname, 'output', 'substack.md');
 
 // Funcție pentru a genera newsletter-ul formatat HTML
 function generateNewsletter(ture) {
@@ -171,6 +172,129 @@ function generateNewsletter(ture) {
   return newsletter;
 }
 
+// Funcție pentru a genera versiunea Substack (Markdown simplu)
+function generateSubstack(ture) {
+  const dataAcum = new Date().toLocaleDateString('ro-RO', { 
+    day: 'numeric', 
+    month: 'long', 
+    year: 'numeric' 
+  });
+  
+  // Separă ture plătite vs gratuite
+  const turePlatite = ture.filter(t => t.pret && t.pret !== '0' && t.pret !== '0 RON');
+  const tureGratuite = ture.filter(t => !t.pret || t.pret === '0' || t.pret === '0 RON');
+  
+  // Grupează pe dificultate
+  const peIncepator = ture.filter(t => 
+    t.dificultate && (t.dificultate.toLowerCase().includes('începător') || t.dificultate.toLowerCase().includes('incepator'))
+  );
+  const peIntermediar = ture.filter(t => 
+    t.dificultate && t.dificultate.toLowerCase().includes('intermediar') && !t.dificultate.toLowerCase().includes('începător')
+  );
+  const peExperimentat = ture.filter(t => 
+    t.dificultate && t.dificultate.toLowerCase().includes('experimentat')
+  );
+
+  // Sortare după dată (cele mai apropiate primele)
+  const sortByDate = (a, b) => {
+    const getMonth = (str) => {
+      if (!str) return 99;
+      const lower = str.toLowerCase();
+      if (lower.includes('ian')) return 1;
+      if (lower.includes('feb')) return 2;
+      if (lower.includes('mar')) return 3;
+      if (lower.includes('apr')) return 4;
+      if (lower.includes('mai')) return 5;
+      if (lower.includes('iun')) return 6;
+      if (lower.includes('iul')) return 7;
+      if (lower.includes('aug')) return 8;
+      if (lower.includes('sep')) return 9;
+      if (lower.includes('oct')) return 10;
+      if (lower.includes('noi')) return 11;
+      if (lower.includes('dec')) return 12;
+      return 99;
+    };
+    return getMonth(a.perioada) - getMonth(b.perioada);
+  };
+
+  turePlatite.sort(sortByDate);
+  tureGratuite.sort(sortByDate);
+
+  let md = `# 🏔️ Ture Montane - ${dataAcum}
+
+Salut!
+
+Săptămâna asta am găsit **${ture.length} ture** organizate în munții României:
+- 💰 **${turePlatite.length}** ture cu ghid (plătite)
+- 🆓 **${tureGratuite.length}** ture gratuite
+
+---
+
+## 💰 Ture cu Ghid (Plătite)
+
+`;
+
+  turePlatite.forEach(t => {
+    md += `### ${t.titlu}\n\n`;
+    md += `🏔️ **${t.zona || 'N/A'}**`;
+    if (t.dificultate) md += ` • ${t.dificultate}`;
+    md += `\n\n`;
+    if (t.perioada) md += `📅 ${t.perioada}\n\n`;
+    if (t.pret) md += `💰 **${t.pret}**\n\n`;
+    md += `[Detalii și înscriere →](${t.link})\n\n`;
+    md += `---\n\n`;
+  });
+
+  md += `## 🆓 Ture Gratuite
+
+`;
+
+  tureGratuite.forEach(t => {
+    md += `### ${t.titlu}\n\n`;
+    md += `🏔️ **${t.zona || 'N/A'}**`;
+    if (t.dificultate) md += ` • ${t.dificultate}`;
+    md += `\n\n`;
+    if (t.perioada) md += `📅 ${t.perioada}\n\n`;
+    md += `[Detalii →](${t.link})\n\n`;
+    md += `---\n\n`;
+  });
+
+  md += `## 📊 Rezumat pe Dificultate
+
+### 🟢 Începător (${peIncepator.length} ture)
+`;
+  peIncepator.forEach(t => {
+    const pret = t.pret ? t.pret : 'gratis';
+    md += `- [${t.titlu}](${t.link}) - ${pret}${t.perioada ? ' - ' + t.perioada : ''}\n`;
+  });
+
+  md += `
+### 🟡 Intermediar (${peIntermediar.length} ture)
+`;
+  peIntermediar.forEach(t => {
+    const pret = t.pret ? t.pret : 'gratis';
+    md += `- [${t.titlu}](${t.link}) - ${pret}${t.perioada ? ' - ' + t.perioada : ''}\n`;
+  });
+
+  md += `
+### 🔴 Experimentat (${peExperimentat.length} ture)
+`;
+  peExperimentat.forEach(t => {
+    const pret = t.pret ? t.pret : 'gratis';
+    md += `- [${t.titlu}](${t.link}) - ${pret}${t.perioada ? ' - ' + t.perioada : ''}\n`;
+  });
+
+  md += `
+---
+
+**Drum bun pe munte!** 🥾
+
+Verifică mereu condițiile meteo pe [MergLaMunte.ro](https://merglamunte.ro) înainte de plecare.
+`;
+
+  return md;
+}
+
 async function runAllScrapers() {
   console.log('🚀 Start scraping ture montane...\n');
   console.log('=' .repeat(50));
@@ -261,6 +385,11 @@ async function runAllScrapers() {
   const newsletterContent = generateNewsletter(toateTurele);
   fs.writeFileSync(NEWSLETTER_FILE, newsletterContent, 'utf8');
   console.log(`✅ Newsletter salvat în: ${NEWSLETTER_FILE}`);
+  
+  // Generează și salvează versiunea Substack
+  const substackContent = generateSubstack(toateTurele);
+  fs.writeFileSync(SUBSTACK_FILE, substackContent, 'utf8');
+  console.log(`✅ Substack salvat în: ${SUBSTACK_FILE}`);
   
   return output;
 }
