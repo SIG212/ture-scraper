@@ -10,6 +10,7 @@ const { scrapeCarCluj } = require('./scrapers/carcluj');
 const OUTPUT_FILE = path.join(__dirname, 'output', 'ture.json');
 const NEWSLETTER_FILE = path.join(__dirname, 'output', 'newsletter.html');
 const SUBSTACK_FILE = path.join(__dirname, 'output', 'substack.md');
+const BMAC_FILE = path.join(__dirname, 'output', 'ture-complete.html');
 
 // Funcție pentru a genera newsletter-ul formatat HTML
 function generateNewsletter(ture) {
@@ -301,6 +302,217 @@ Verifică mereu condițiile meteo pe [MergLaMunte.ro](https://merglamunte.ro) î
   return md;
 }
 
+// Funcție pentru a genera versiunea Buy Me a Coffee (HTML frumos, printabil)
+function generateBMAC(ture) {
+  const dataAcum = new Date().toLocaleDateString('ro-RO', { 
+    day: 'numeric', 
+    month: 'long', 
+    year: 'numeric' 
+  });
+  
+  // Separă ture plătite vs gratuite
+  const turePlatite = ture.filter(t => t.pret && t.pret !== '0' && t.pret !== '0 RON');
+  const tureGratuite = ture.filter(t => !t.pret || t.pret === '0' || t.pret === '0 RON');
+  
+  // Grupează pe dificultate
+  const peIncepator = ture.filter(t => 
+    t.dificultate && (t.dificultate.toLowerCase().includes('începător') || t.dificultate.toLowerCase().includes('incepator'))
+  );
+  const peIntermediar = ture.filter(t => 
+    t.dificultate && t.dificultate.toLowerCase().includes('intermediar') && !t.dificultate.toLowerCase().includes('începător')
+  );
+  const peExperimentat = ture.filter(t => 
+    t.dificultate && t.dificultate.toLowerCase().includes('experimentat')
+  );
+
+  // Sortare după dată
+  const sortByDate = (a, b) => {
+    const getMonth = (str) => {
+      if (!str) return 99;
+      const lower = str.toLowerCase();
+      if (lower.includes('ian')) return 1;
+      if (lower.includes('feb')) return 2;
+      if (lower.includes('mar')) return 3;
+      if (lower.includes('apr')) return 4;
+      if (lower.includes('mai')) return 5;
+      if (lower.includes('iun')) return 6;
+      if (lower.includes('iul')) return 7;
+      if (lower.includes('aug')) return 8;
+      if (lower.includes('sep')) return 9;
+      if (lower.includes('oct')) return 10;
+      if (lower.includes('noi')) return 11;
+      if (lower.includes('dec')) return 12;
+      return 99;
+    };
+    return getMonth(a.perioada) - getMonth(b.perioada);
+  };
+
+  turePlatite.sort(sortByDate);
+  tureGratuite.sort(sortByDate);
+
+  const formatTura = (t) => {
+    return `
+    <div style="background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid ${t.pret ? '#28a745' : '#17a2b8'};">
+      <h3 style="margin: 0 0 12px 0; color: #1a1a1a; font-size: 18px;">${t.titlu}</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+        <span style="background: #e9ecef; padding: 4px 12px; border-radius: 20px; font-size: 14px;">🏔️ ${t.zona || 'N/A'}</span>
+        ${t.dificultate ? `<span style="background: #e9ecef; padding: 4px 12px; border-radius: 20px; font-size: 14px;">📊 ${t.dificultate}</span>` : ''}
+        ${t.perioada ? `<span style="background: #fff3cd; padding: 4px 12px; border-radius: 20px; font-size: 14px;">📅 ${t.perioada}</span>` : ''}
+        ${t.pret ? `<span style="background: #d4edda; padding: 4px 12px; border-radius: 20px; font-size: 14px; font-weight: bold;">💰 ${t.pret}</span>` : '<span style="background: #d1ecf1; padding: 4px 12px; border-radius: 20px; font-size: 14px;">🆓 Gratis</span>'}
+      </div>
+      <a href="${t.link}" style="color: #007bff; text-decoration: none; font-weight: 500;">🔗 Detalii și înscriere →</a>
+    </div>`;
+  };
+
+  let html = `<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ture Montane - ${dataAcum}</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #f8f9fa;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    h1 { text-align: center; color: #1a1a1a; margin-bottom: 5px; }
+    .date { text-align: center; color: #666; margin-bottom: 30px; }
+    .quick-links {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+    .quick-links h2 { margin: 0 0 15px 0; font-size: 18px; }
+    .quick-links a { color: white; text-decoration: none; }
+    .quick-links a:hover { text-decoration: underline; }
+    .quick-links p { margin: 8px 0; }
+    .section-title {
+      font-size: 22px;
+      color: #1a1a1a;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 10px;
+      margin: 30px 0 20px 0;
+    }
+    .summary-section { background: #fff; border-radius: 12px; padding: 20px; margin-top: 30px; }
+    .summary-section h2 { margin-top: 0; color: #1a1a1a; }
+    .summary-section h3 { margin: 20px 0 10px 0; }
+    .summary-section ul { padding-left: 20px; }
+    .summary-section li { margin: 8px 0; }
+    .summary-section a { color: #333; text-decoration: none; }
+    .summary-section a:hover { color: #007bff; }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+    }
+    .footer-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 35px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .container { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏔️ Ture Montane</h1>
+    <p class="date">${dataAcum}</p>
+    
+    <div class="quick-links">
+      <h2>📍 Quick Links</h2>
+      <p>💰 <a href="#platite">Ture cu ghid (plătite)</a> - <strong>${turePlatite.length}</strong> ture</p>
+      <p>🆓 <a href="#gratuite">Ture gratuite</a> - <strong>${tureGratuite.length}</strong> ture</p>
+      <p>🟢 <a href="#incepator">Începător</a> - <strong>${peIncepator.length}</strong> ture</p>
+      <p>🟡 <a href="#intermediar">Intermediar</a> - <strong>${peIntermediar.length}</strong> ture</p>
+      <p>🔴 <a href="#experimentat">Experimentat</a> - <strong>${peExperimentat.length}</strong> ture</p>
+    </div>
+
+    <h2 id="platite" class="section-title">💰 Ture cu Ghid (Plătite)</h2>
+`;
+
+  turePlatite.forEach(t => { html += formatTura(t); });
+
+  html += `
+    <h2 id="gratuite" class="section-title">🆓 Ture Gratuite</h2>
+`;
+
+  tureGratuite.forEach(t => { html += formatTura(t); });
+
+  html += `
+    <div class="summary-section">
+      <h2>📊 Rezumat pe Dificultate</h2>
+      
+      <h3 id="incepator">🟢 Începător (${peIncepator.length} ture)</h3>
+      <ul>
+`;
+  peIncepator.forEach(t => {
+    const pret = t.pret ? t.pret : 'gratis';
+    html += `<li><a href="${t.link}">${t.titlu}</a> - ${pret}${t.perioada ? ' - ' + t.perioada : ''}</li>\n`;
+  });
+
+  html += `
+      </ul>
+      
+      <h3 id="intermediar">🟡 Intermediar (${peIntermediar.length} ture)</h3>
+      <ul>
+`;
+  peIntermediar.forEach(t => {
+    const pret = t.pret ? t.pret : 'gratis';
+    html += `<li><a href="${t.link}">${t.titlu}</a> - ${pret}${t.perioada ? ' - ' + t.perioada : ''}</li>\n`;
+  });
+
+  html += `
+      </ul>
+      
+      <h3 id="experimentat">🔴 Experimentat (${peExperimentat.length} ture)</h3>
+      <ul>
+`;
+  peExperimentat.forEach(t => {
+    const pret = t.pret ? t.pret : 'gratis';
+    html += `<li><a href="${t.link}">${t.titlu}</a> - ${pret}${t.perioada ? ' - ' + t.perioada : ''}</li>\n`;
+  });
+
+  html += `
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p style="font-size: 24px; margin: 0;">Drum bun pe munte! 🥾</p>
+      <p style="color: #666;">Verifică condițiile meteo înainte de plecare</p>
+      <a href="https://merglamunte.ro" class="footer-btn">🌤️ MergLaMunte.ro</a>
+    </div>
+  </div>
+</body>
+</html>`;
+
+  return html;
+}
+
 async function runAllScrapers() {
   console.log('🚀 Start scraping ture montane...\n');
   console.log('=' .repeat(50));
@@ -396,6 +608,11 @@ async function runAllScrapers() {
   const substackContent = generateSubstack(toateTurele);
   fs.writeFileSync(SUBSTACK_FILE, substackContent, 'utf8');
   console.log(`✅ Substack salvat în: ${SUBSTACK_FILE}`);
+  
+  // Generează și salvează versiunea Buy Me a Coffee
+  const bmacContent = generateBMAC(toateTurele);
+  fs.writeFileSync(BMAC_FILE, bmacContent, 'utf8');
+  console.log(`✅ Buy Me a Coffee salvat în: ${BMAC_FILE}`);
   
   return output;
 }
