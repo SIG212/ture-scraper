@@ -1,33 +1,58 @@
 {
-  "ultima_actualizare": "2026-02-02T07:02:18.057Z",
-  "total_ture": 26,
+  "ultima_actualizare": "2026-02-09T07:04:36.907Z",
+  "total_ture": 40,
   "surse": [
     "CAR Cluj",
     "Terramont"
   ],
   "statistici": {
     "pe_sursa": {
-      "CAR Cluj": 6,
-      "Terramont": 20
+      "CAR Cluj": 23,
+      "Terramont": 17
     },
     "pe_zona": {
-      "Făgăraș": 4,
-      "Altele": 1,
-      "Retezat": 6,
-      "Trascău": 2,
+      "Altele": 10,
+      "Făgăraș": 5,
+      "Pădurea Craiului": 1,
+      "Rodnei": 2,
+      "Bucegi": 1,
+      "Retezat": 5,
+      "Trascău": 4,
+      "Apuseni": 1,
+      "Iezer-Păpușa": 1,
       "Buscat": 1,
       "Târgu Mureș": 1,
       "Călimani": 1,
-      "Rodnei": 1,
       "Ciucaș": 1,
-      "Via Transilvanica": 4,
+      "Via Transilvanica": 3,
       "Ceahlău": 1,
       "Cindrel": 1,
-      "Bucegi": 1,
       "Hășmaș": 1
     }
   },
   "ture": [
+    {
+      "titlu": "Adoptă un cățărător - ediția pentru tineret",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Experimentat",
+      "luna": "Mai",
+      "perioada": "01 Mai",
+      "link": "https://carcluj.ro/activitati/adopta-un-catarator-editia-pentru-tineret",
+      "sursa": "CAR Cluj",
+      "pret": "100 RON"
+    },
+    {
+      "titlu": "Atelier alpinism de iarna Muntii Fagaras 12-15 martie 2026",
+      "zona": "Făgăraș",
+      "tip_activitate": "Alpinism",
+      "dificultate": "Experimentat",
+      "luna": "Martie",
+      "perioada": "12-15 mar",
+      "link": "https://carcluj.ro/activitati/atelier-escalada-la-gheata-balea-lac-6-8-martie-2026",
+      "sursa": "CAR Cluj",
+      "pret": "300 RON"
+    },
     {
       "titlu": "Atelier de alpinism de iarna - Muntii Fagaras",
       "zona": "Făgăraș",
@@ -40,15 +65,70 @@
       "pret": "300 RON"
     },
     {
-      "titlu": "Atelier de alpinism de iarna pentru tineret",
-      "zona": "Altele",
-      "tip_activitate": "Alpinism",
+      "titlu": "Circuit pe creastă in Pădurea Craiului.",
+      "zona": "Pădurea Craiului",
+      "tip_activitate": "Drumeție",
       "dificultate": "Începător",
-      "luna": "Februarie",
-      "perioada": "05 - 08 feb",
-      "link": "https://carcluj.ro/activitati/atelier-de-alpinism-de-iarna-pentru-tineret",
+      "luna": "Martie",
+      "perioada": "01 - 31 mar",
+      "link": "https://carcluj.ro/activitati/circuit-pe-creasta-padurea-craiului",
       "sursa": "CAR Cluj",
       "pret": null
+    },
+    {
+      "titlu": "Excursie botanică în Rezervația Naturală Scărița-Belioara - aspecte de primăvară",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Mai",
+      "perioada": "16 - 17 Mai",
+      "link": "https://carcluj.ro/activitati/excursie-botanica-rezervatia-naturala-scarita-belioara-aspecte-de-primavara",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Explorare Muntii Rodnei și Muntii Maramureșului pe două roți",
+      "zona": "Rodnei",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Experimentat",
+      "luna": "Iulie",
+      "perioada": "31 iul",
+      "link": "https://carcluj.ro/activitati/explorare-muntii-rodnei-si-muntii-maramuresului-pe-doua-roti",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Explorarea parcului natural Domogled - Valea Cernei si a Munților Mehedinți",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Aprilie",
+      "perioada": "30 Apr",
+      "link": "https://carcluj.ro/activitati/explorarea-parcului-natural-domogled-valea-cernei-si-muntilor-mehedinti",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Iarna in Muntii Bucegi: Varful Omu",
+      "zona": "Bucegi",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Februarie",
+      "perioada": "20 - 22 feb",
+      "link": "https://carcluj.ro/activitati/iarna-muntii-bucegi-varful-omu",
+      "sursa": "CAR Cluj",
+      "pret": "50 RON"
+    },
+    {
+      "titlu": "ISTORISIRI ÎNFLORITE, EDIȚIA A DOUA: O CĂLĂTORIE DE LEGENDĂ ÎN VALEA CERNEI",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Aprilie",
+      "perioada": "30 Apr",
+      "link": "https://carcluj.ro/activitati/istorisiri-inflorite-o-calatorie-de-legenda-valea-cernei",
+      "sursa": "CAR Cluj",
+      "pret": "250 RON"
     },
     {
       "titlu": "Memorialul Cuxi, Retezat 12-15 februarie 2026",
@@ -62,13 +142,123 @@
       "pret": "290 RON"
     },
     {
-      "titlu": "Munții Trascau. Rimetea - Grota Studenţilor - Piatra Secuiului - Rimetea (circuit)",
+      "titlu": "Muntii Nostri - Tura MTB Muntii Muntele Mare: Rezervatia Naturala Molhasurile Capatanii",
+      "zona": "Altele",
+      "tip_activitate": "Mountain Bike",
+      "dificultate": "Intermediar",
+      "luna": "August",
+      "perioada": "22 Aug",
+      "link": "https://carcluj.ro/activitati/tura-mtb-muntii-muntele-mare-rezervatia-naturala-molhasurile-capatanii",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Munții Trascău: Cheile Turzii (Circuit)",
+      "zona": "Trascău",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Februarie",
+      "perioada": "28 feb",
+      "link": "https://carcluj.ro/activitati/muntii-trascau-cheile-turzii-circuit",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Munții Trascău: Cheile Valișoarei (Circuit)",
+      "zona": "Trascău",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Martie",
+      "perioada": "14 mar",
+      "link": "https://carcluj.ro/activitati/muntii-trascau-cheile-valisoarei-circuit",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Munții Trascău. Rimetea - Grota Studenţilor - Piatra Secuiului - Rimetea (circuit)",
       "zona": "Trascău",
       "tip_activitate": "Drumeție",
       "dificultate": "Intermediar",
       "luna": "Februarie",
       "perioada": "15 feb",
       "link": "https://carcluj.ro/activitati/muntii-trascau-rimetea-grota-studentilor-piatra-secuiului-rimeteacircuit",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Pe Vf. Suru cu MTB-ul",
+      "zona": "Altele",
+      "tip_activitate": "Mountain Bike",
+      "dificultate": "Experimentat",
+      "luna": "Iulie",
+      "perioada": "01 - 31 iul",
+      "link": "https://carcluj.ro/activitati/pe-vf-suru-cu-mtb-ul",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Tabăra iernii, Padiș 12-15 martie 2026",
+      "zona": "Apuseni",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "perioada": "12-15 mar",
+      "link": "https://carcluj.ro/activitati/tabara-iernii-padis-12-15-februarie-2026",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Transvâlcan in două zile",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Experimentat",
+      "luna": "Mai",
+      "perioada": "29 Mai",
+      "link": "https://carcluj.ro/activitati/transvalcan-doua-zile",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Tură de iarnă pe Vârful Gârgălău",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Experimentat",
+      "luna": "Februarie",
+      "perioada": "28 feb",
+      "link": "https://carcluj.ro/activitati/tura-de-iarna-pe-varful-gargalau",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Tura MTB Muntii Iezer Papusa",
+      "zona": "Iezer-Păpușa",
+      "tip_activitate": "Mountain Bike",
+      "dificultate": "Experimentat",
+      "luna": "Iulie",
+      "perioada": "03 - 05 iul",
+      "link": "https://carcluj.ro/activitati/tura-mtb-muntii-iezer-papusa",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Tura MTB Muntii Muntele Mare: Varful Pietrele Incalecate, Muntele Agris",
+      "zona": "Altele",
+      "tip_activitate": "Mountain Bike",
+      "dificultate": "Experimentat",
+      "luna": "Iulie",
+      "perioada": "04 iul",
+      "link": "https://carcluj.ro/activitati/tura-mtb-muntii-muntele-mare-varful-pietrele-incalecate-muntele-agris",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Tura MTB Valea Rasca, Otelesti si Manastirea Muntele Rece - Muntii Nostri",
+      "zona": "Altele",
+      "tip_activitate": "Mountain Bike",
+      "dificultate": "Intermediar",
+      "luna": "Mai",
+      "perioada": "09 Mai",
+      "link": "https://carcluj.ro/activitati/muntii-nostri-tura-mtb-muntii-muntele-mare-valea-ierii-dobrin-si-manastirea-muntele-rece",
       "sursa": "CAR Cluj",
       "pret": null
     },
@@ -216,28 +406,6 @@
       "ghid": "Roxana - 0745136009"
     },
     {
-      "titlu": "Drumeție Via Transilvanica Saschiz – Criț",
-      "zona": "Via Transilvanica",
-      "dificultate": null,
-      "luna": "Februarie",
-      "link": "https://terramont.ro/drumetie-via-transilvanica-saschiz-crit/",
-      "sursa": "Terramont",
-      "pret": "194 RON",
-      "perioada": "8 FEBRUARIE",
-      "ghid": "Cristi - 0733514842"
-    },
-    {
-      "titlu": "Drumeție: Munții Bucegi – Cabana Mălăiești și Piatra Craiului – Cabana Curmătura",
-      "zona": "Bucegi",
-      "dificultate": null,
-      "luna": "Februarie",
-      "link": "https://terramont.ro/drumetie-in-muntii-bucegi-cabana-malaiesti-cabana-curmatura-piatra-craiului/",
-      "sursa": "Terramont",
-      "pret": "333 RON",
-      "perioada": null,
-      "ghid": "Shop - "
-    },
-    {
       "titlu": "Drumeție: Munții Făgăraș, Vf. Lespezi",
       "zona": "Făgăraș",
       "dificultate": null,
@@ -257,17 +425,6 @@
       "sursa": "Terramont",
       "pret": "316 RON",
       "perioada": "21-22 FEB",
-      "ghid": "Shop - "
-    },
-    {
-      "titlu": "Drumeție: Munții Retezat – Lacul Ștevia",
-      "zona": "Retezat",
-      "dificultate": null,
-      "luna": "Februarie",
-      "link": "https://terramont.ro/drumetie-lacul-stevia-retezat/",
-      "sursa": "Terramont",
-      "pret": "194 RON",
-      "perioada": "7 FEBRUARIE",
       "ghid": "Shop - "
     },
     {
