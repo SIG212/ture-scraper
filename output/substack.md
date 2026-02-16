@@ -1,4 +1,4 @@
-# 🏔️ Ture Montane - 9 februarie 2026
+# 🏔️ Ture Montane - 16 februarie 2026
 
 Salut!
 
@@ -6,27 +6,15 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 
 ## 📍 Quick Links
 
-- 💰 [Ture cu ghid (plătite)](#ture-cu-ghid-plătite) - **24** ture
-- 🆓 [Ture gratuite](#ture-gratuite) - **16** ture
-- 🟢 [Începător](#-începător-10-ture) - **10** ture
-- 🟡 [Intermediar](#-intermediar-14-ture) - **14** ture
-- 🔴 [Experimentat](#-experimentat-11-ture) - **11** ture
+- 💰 [Ture cu ghid (plătite)](#ture-cu-ghid-plătite) - **22** ture
+- 🆓 [Ture gratuite](#ture-gratuite) - **18** ture
+- 🟢 [Începător](#-începător-11-ture) - **11** ture
+- 🟡 [Intermediar](#-intermediar-15-ture) - **15** ture
+- 🔴 [Experimentat](#-experimentat-10-ture) - **10** ture
 
 ---
 
 ## 💰 Ture cu Ghid (Plătite)
-
-### Atelier de alpinism de iarna - Muntii Fagaras
-
-🏔️ **Făgăraș** • Experimentat
-
-📅 12 - 15 feb
-
-💰 **300 RON**
-
-[Detalii și înscriere →](https://carcluj.ro/activitati/atelier-de-alpinism-de-iarna-muntii-fagaras-1)
-
----
 
 ### Iarna in Muntii Bucegi: Varful Omu
 
@@ -40,30 +28,6 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 
 ---
 
-### Memorialul Cuxi, Retezat 12-15 februarie 2026
-
-🏔️ **Retezat** • Intermediar
-
-📅 12-15 feb
-
-💰 **290 RON**
-
-[Detalii și înscriere →](https://carcluj.ro/activitati/memorialul-cuxi-retezat-12-15-februarie-2026)
-
----
-
-### Zi de Catarat in Targu Mures
-
-🏔️ **Târgu Mureș** • Începător
-
-📅 08 feb
-
-💰 **55 RON**
-
-[Detalii și înscriere →](https://carcluj.ro/activitati/zi-de-catarat-targu-mures)
-
----
-
 ### Drumeție pe rachete de zăpadă: Munții Cindrel, Vârful Rozdești
 
 🏔️ **Cindrel**
@@ -73,18 +37,6 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 💰 **198 RON**
 
 [Detalii și înscriere →](https://terramont.ro/drumetie-vf-rozdesti-muntii-cindrel/)
-
----
-
-### Drumeție: Munții Făgăraș, Vf. Lespezi
-
-🏔️ **Făgăraș**
-
-📅 13-15 feb
-
-💰 **378 RON**
-
-[Detalii și înscriere →](https://terramont.ro/drumetie-vf-lespezi-muntii-fagaras/)
 
 ---
 
@@ -133,18 +85,6 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 💰 **194 RON**
 
 [Detalii și înscriere →](https://terramont.ro/drumetie-via-transilvanica-bradetelu-campu-cetatii/)
-
----
-
-### Drumeție: Via Transilvanica – Cașva – Brădețelu
-
-🏔️ **Via Transilvanica**
-
-📅 14 FEBRUARIE
-
-💰 **192 RON**
-
-[Detalii și înscriere →](https://terramont.ro/drumetie-via-transilvanica-casva-bradetelu/)
 
 ---
 
@@ -268,6 +208,30 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 
 ---
 
+### Drumeție începător – intermediar: La brândușe pe Valea Sâmbetei, Făgăraș
+
+🏔️ **Făgăraș** • Începător-Intermediar
+
+📅 18 APRILIE
+
+💰 **198 RON**
+
+[Detalii și înscriere →](https://terramont.ro/muntii-fagaras-valea-sambetei/)
+
+---
+
+### Drumeție începător: Munții Trascău, Piatra Craivii
+
+🏔️ **Trascău** • Începător
+
+📅 4 APRILIE
+
+💰 **177 RON**
+
+[Detalii și înscriere →](https://terramont.ro/drumetie-incepator-muntii-trascau-piatra-craivii/)
+
+---
+
 ### Adoptă un cățărător - ediția pentru tineret
 
 🏔️ **Altele** • Experimentat
@@ -277,6 +241,18 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 💰 **100 RON**
 
 [Detalii și înscriere →](https://carcluj.ro/activitati/adopta-un-catarator-editia-pentru-tineret)
+
+---
+
+### Drumeție începător: La Narcise în Tecșești și Piatra Cetii, Trascău
+
+🏔️ **Trascău** • Începător
+
+📅 9 MAI
+
+💰 **198 RON**
+
+[Detalii și înscriere →](https://terramont.ro/drumetie-incepator-la-narcise-in-tecsesti-si-piatra-cetii-trascau/)
 
 ---
 
@@ -312,16 +288,6 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 
 ---
 
-### Munții Trascău. Rimetea - Grota Studenţilor - Piatra Secuiului - Rimetea (circuit)
-
-🏔️ **Trascău** • Intermediar
-
-📅 15 feb
-
-[Detalii →](https://carcluj.ro/activitati/muntii-trascau-rimetea-grota-studentilor-piatra-secuiului-rimeteacircuit)
-
----
-
 ### Tură de iarnă pe Vârful Gârgălău
 
 🏔️ **Altele** • Experimentat
@@ -332,13 +298,13 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 
 ---
 
-### Urme pe zăpadă - Drumeție de o zi pe urmele animalelor sălbatice în Buscat
+### BRITROCK FILM TOUR 2025
 
-🏔️ **Buscat** • Începător
+🏔️ **Altele**
 
-📅 08 feb
+📅 02 mar
 
-[Detalii →](https://carcluj.ro/activitati/drumetie-de-o-zi-pe-urmele-animalelor-salbatice-buscat)
+[Detalii →](https://carcluj.ro/activitati/britrock-film-tour-2025)
 
 ---
 
@@ -352,7 +318,7 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 
 ---
 
-### Munții Trascău: Cheile Valișoarei (Circuit)
+### Munții Trascău: Cheile Vălișoarei (Circuit)
 
 🏔️ **Trascău** • Intermediar
 
@@ -372,6 +338,16 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 
 ---
 
+### Explorarea Munților Măcin: Paștele pe doua roți.
+
+🏔️ **Măcin** • Intermediar
+
+📅 10 - 13 Apr
+
+[Detalii →](https://carcluj.ro/activitati/explorarea-muntilor-macin-pastele-pe-doua-roti)
+
+---
+
 ### Explorarea parcului natural Domogled - Valea Cernei si a Munților Mehedinți
 
 🏔️ **Altele** • Intermediar
@@ -379,6 +355,16 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 📅 30 Apr
 
 [Detalii →](https://carcluj.ro/activitati/explorarea-parcului-natural-domogled-valea-cernei-si-muntilor-mehedinti)
+
+---
+
+### Tabăra internațională pentru tineret | Via Transilvanica
+
+🏔️ **Via Transilvanica** • Intermediar
+
+📅 23 - 26 Apr
+
+[Detalii →](https://carcluj.ro/activitati/tabara-internationala-pentru-tineret-transilvanica)
 
 ---
 
@@ -409,6 +395,16 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 📅 09 Mai
 
 [Detalii →](https://carcluj.ro/activitati/muntii-nostri-tura-mtb-muntii-muntele-mare-valea-ierii-dobrin-si-manastirea-muntele-rece)
+
+---
+
+### Nestematele naturii: Excursie entomologică pe Platoul Bedeleu
+
+🏔️ **Altele** • Intermediar
+
+📅 21 Iun
+
+[Detalii →](https://carcluj.ro/activitati/nestematele-naturii-excursie-entomologica-pe-platoul-bedeleu)
 
 ---
 
@@ -464,38 +460,39 @@ Săptămâna asta am găsit **40 ture** organizate în munții României:
 
 ## 📊 Rezumat pe Dificultate
 
-### 🟢 Începător (10 ture)
+### 🟢 Începător (11 ture)
 - [Circuit pe creastă in Pădurea Craiului.](https://carcluj.ro/activitati/circuit-pe-creasta-padurea-craiului) - gratis - 01 - 31 mar
 - [Tabăra iernii, Padiș 12-15 martie 2026](https://carcluj.ro/activitati/tabara-iernii-padis-12-15-februarie-2026) - gratis - 12-15 mar
-- [Urme pe zăpadă - Drumeție de o zi pe urmele animalelor sălbatice în Buscat](https://carcluj.ro/activitati/drumetie-de-o-zi-pe-urmele-animalelor-salbatice-buscat) - gratis - 08 feb
-- [Zi de Catarat in Targu Mures](https://carcluj.ro/activitati/zi-de-catarat-targu-mures) - 55 RON - 08 feb
 - [Drumeție începător – intermediar: Călimani, Scaunul Domnului](https://terramont.ro/drumetie-calimani-scaunul-domnului/) - 195 RON - 14 mar
 - [Drumeție începător – intermediar: Circuit Poarta Zmeului, Trascău](https://terramont.ro/drumetie-circuit-poarta-zmeilor-trascau/) - 193 RON
+- [Drumeție începător – intermediar: La brândușe pe Valea Sâmbetei, Făgăraș](https://terramont.ro/muntii-fagaras-valea-sambetei/) - 198 RON - 18 APRILIE
 - [Drumeție începător – intermediar: Munții Retezat – Cabana Gențiana, Cabana Pietrele](https://terramont.ro/drumetie-muntii-retezat-cabana-gentiana-cabana-pietrele/) - 196 RON - 22 MARTIE
 - [Drumeție începător – intermediar: Rodnei, Vârful Cobășel și Roșu](https://terramont.ro/drumetie-muntii-rodnei-cobasel-rosu/) - 197 RON - 28 MAR
+- [Drumeție începător: La Narcise în Tecșești și Piatra Cetii, Trascău](https://terramont.ro/drumetie-incepator-la-narcise-in-tecsesti-si-piatra-cetii-trascau/) - 198 RON - 9 MAI
 - [Drumeție începător: Munții și Cabana Ciucaș](https://terramont.ro/drumetie-muntii-cabana-ciucas/) - 338 RON - 7-8 MARTIE
+- [Drumeție începător: Munții Trascău, Piatra Craivii](https://terramont.ro/drumetie-incepator-muntii-trascau-piatra-craivii/) - 177 RON - 4 APRILIE
 - [Drumeție începător: Via Transilvanica, Mălâncrav – Biertan](https://terramont.ro/drumetie-via-transilvanica-malancrav-biertan/) - 196 RON
 
-### 🟡 Intermediar (14 ture)
+### 🟡 Intermediar (15 ture)
 - [Excursie botanică în Rezervația Naturală Scărița-Belioara - aspecte de primăvară](https://carcluj.ro/activitati/excursie-botanica-rezervatia-naturala-scarita-belioara-aspecte-de-primavara) - gratis - 16 - 17 Mai
+- [Explorarea Munților Măcin: Paștele pe doua roți.](https://carcluj.ro/activitati/explorarea-muntilor-macin-pastele-pe-doua-roti) - gratis - 10 - 13 Apr
 - [Explorarea parcului natural Domogled - Valea Cernei si a Munților Mehedinți](https://carcluj.ro/activitati/explorarea-parcului-natural-domogled-valea-cernei-si-muntilor-mehedinti) - gratis - 30 Apr
 - [Iarna in Muntii Bucegi: Varful Omu](https://carcluj.ro/activitati/iarna-muntii-bucegi-varful-omu) - 50 RON - 20 - 22 feb
 - [ISTORISIRI ÎNFLORITE, EDIȚIA A DOUA: O CĂLĂTORIE DE LEGENDĂ ÎN VALEA CERNEI](https://carcluj.ro/activitati/istorisiri-inflorite-o-calatorie-de-legenda-valea-cernei) - 250 RON - 30 Apr
-- [Memorialul Cuxi, Retezat 12-15 februarie 2026](https://carcluj.ro/activitati/memorialul-cuxi-retezat-12-15-februarie-2026) - 290 RON - 12-15 feb
 - [Muntii Nostri - Tura MTB Muntii Muntele Mare: Rezervatia Naturala Molhasurile Capatanii](https://carcluj.ro/activitati/tura-mtb-muntii-muntele-mare-rezervatia-naturala-molhasurile-capatanii) - gratis - 22 Aug
 - [Munții Trascău: Cheile Turzii (Circuit)](https://carcluj.ro/activitati/muntii-trascau-cheile-turzii-circuit) - gratis - 28 feb
-- [Munții Trascău: Cheile Valișoarei (Circuit)](https://carcluj.ro/activitati/muntii-trascau-cheile-valisoarei-circuit) - gratis - 14 mar
-- [Munții Trascău. Rimetea - Grota Studenţilor - Piatra Secuiului - Rimetea (circuit)](https://carcluj.ro/activitati/muntii-trascau-rimetea-grota-studentilor-piatra-secuiului-rimeteacircuit) - gratis - 15 feb
+- [Munții Trascău: Cheile Vălișoarei (Circuit)](https://carcluj.ro/activitati/muntii-trascau-cheile-valisoarei-circuit) - gratis - 14 mar
+- [Nestematele naturii: Excursie entomologică pe Platoul Bedeleu](https://carcluj.ro/activitati/nestematele-naturii-excursie-entomologica-pe-platoul-bedeleu) - gratis - 21 Iun
+- [Tabăra internațională pentru tineret | Via Transilvanica](https://carcluj.ro/activitati/tabara-internationala-pentru-tineret-transilvanica) - gratis - 23 - 26 Apr
 - [Tura MTB Valea Rasca, Otelesti si Manastirea Muntele Rece - Muntii Nostri](https://carcluj.ro/activitati/muntii-nostri-tura-mtb-muntii-muntele-mare-valea-ierii-dobrin-si-manastirea-muntele-rece) - gratis - 09 Mai
 - [Drumeție intermediar – experimentat: Făgăraș, Vârful și Cabana Suru](https://terramont.ro/drumetie-fagaras-cabana-suru/) - 367 RON - 7-8 martie
 - [Drumeție intermediar – experimentat: Retezat, Vârful Peleaga](https://terramont.ro/drumetie-retezat-varful-peleaga/) - 379 RON - 13-15 MARTIE
 - [Drumeție intermediar: Munții Făgăraș, Cabana Negoiu și Muchia Șerbota](https://terramont.ro/drumetie-muntii-fagaras-muchia-serbota/) - 197 RON - 29 MAR
 - [Drumeție intermediar: Răsărit în Ceahlău, Vârful Toaca și Cabana Dochia](https://terramont.ro/drumetie-ceahlau-varful-toaca/) - 336 RON - 21-22 MAR
 
-### 🔴 Experimentat (11 ture)
+### 🔴 Experimentat (10 ture)
 - [Adoptă un cățărător - ediția pentru tineret](https://carcluj.ro/activitati/adopta-un-catarator-editia-pentru-tineret) - 100 RON - 01 Mai
 - [Atelier alpinism de iarna Muntii Fagaras 12-15 martie 2026](https://carcluj.ro/activitati/atelier-escalada-la-gheata-balea-lac-6-8-martie-2026) - 300 RON - 12-15 mar
-- [Atelier de alpinism de iarna - Muntii Fagaras](https://carcluj.ro/activitati/atelier-de-alpinism-de-iarna-muntii-fagaras-1) - 300 RON - 12 - 15 feb
 - [Explorare Muntii Rodnei și Muntii Maramureșului pe două roți](https://carcluj.ro/activitati/explorare-muntii-rodnei-si-muntii-maramuresului-pe-doua-roti) - gratis - 31 iul
 - [Pe Vf. Suru cu MTB-ul](https://carcluj.ro/activitati/pe-vf-suru-cu-mtb-ul) - gratis - 01 - 31 iul
 - [Transvâlcan in două zile](https://carcluj.ro/activitati/transvalcan-doua-zile) - gratis - 29 Mai
