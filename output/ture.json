@@ -1,32 +1,30 @@
 {
-  "ultima_actualizare": "2026-02-16T07:03:33.839Z",
-  "total_ture": 40,
+  "ultima_actualizare": "2026-02-23T07:04:42.561Z",
+  "total_ture": 45,
   "surse": [
     "CAR Cluj",
     "Terramont"
   ],
   "statistici": {
     "pe_sursa": {
-      "CAR Cluj": 22,
-      "Terramont": 18
+      "CAR Cluj": 25,
+      "Terramont": 20
     },
     "pe_zona": {
-      "Altele": 12,
+      "Altele": 18,
       "Făgăraș": 4,
       "Pădurea Craiului": 1,
       "Rodnei": 2,
-      "Măcin": 1,
       "Bucegi": 1,
       "Trascău": 5,
-      "Apuseni": 1,
+      "Apuseni": 2,
       "Via Transilvanica": 3,
       "Iezer-Păpușa": 1,
       "Călimani": 1,
       "Retezat": 4,
+      "Cozia": 1,
       "Ciucaș": 1,
-      "Ceahlău": 1,
-      "Cindrel": 1,
-      "Hășmaș": 1
+      "Ceahlău": 1
     }
   },
   "ture": [
@@ -53,6 +51,17 @@
       "pret": "300 RON"
     },
     {
+      "titlu": "Atelier Self-Service: întreținere echipament schi",
+      "zona": "Altele",
+      "tip_activitate": "Schi",
+      "dificultate": "Începător",
+      "luna": "Februarie",
+      "perioada": "25 feb",
+      "link": "https://carcluj.ro/activitati/atelier-self-service-intretinere-echipament-schi",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
       "titlu": "BRITROCK FILM TOUR 2025",
       "zona": "Altele",
       "tip_activitate": "Drumeție",
@@ -71,6 +80,17 @@
       "luna": "Martie",
       "perioada": "01 - 31 mar",
       "link": "https://carcluj.ro/activitati/circuit-pe-creasta-padurea-craiului",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Drumetie pe Varful Ijar",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Februarie",
+      "perioada": "22 feb",
+      "link": "https://carcluj.ro/activitati/drumetie-pe-varful-ijar",
       "sursa": "CAR Cluj",
       "pret": null
     },
@@ -97,17 +117,6 @@
       "pret": null
     },
     {
-      "titlu": "Explorarea Munților Măcin: Paștele pe doua roți.",
-      "zona": "Măcin",
-      "tip_activitate": "Drumeție",
-      "dificultate": "Intermediar",
-      "luna": "Aprilie",
-      "perioada": "10 - 13 Apr",
-      "link": "https://carcluj.ro/activitati/explorarea-muntilor-macin-pastele-pe-doua-roti",
-      "sursa": "CAR Cluj",
-      "pret": null
-    },
-    {
       "titlu": "Explorarea parcului natural Domogled - Valea Cernei si a Munților Mehedinți",
       "zona": "Altele",
       "tip_activitate": "Drumeție",
@@ -122,9 +131,9 @@
       "titlu": "Iarna in Muntii Bucegi: Varful Omu",
       "zona": "Bucegi",
       "tip_activitate": "Drumeție",
-      "dificultate": "Intermediar",
+      "dificultate": "Experimentat",
       "luna": "Februarie",
-      "perioada": "20 - 22 feb",
+      "perioada": "27 feb",
       "link": "https://carcluj.ro/activitati/iarna-muntii-bucegi-varful-omu",
       "sursa": "CAR Cluj",
       "pret": "50 RON"
@@ -168,7 +177,7 @@
       "tip_activitate": "Drumeție",
       "dificultate": "Intermediar",
       "luna": "Martie",
-      "perioada": "14 mar",
+      "perioada": "28 mar",
       "link": "https://carcluj.ro/activitati/muntii-trascau-cheile-valisoarei-circuit",
       "sursa": "CAR Cluj",
       "pret": null
@@ -185,6 +194,17 @@
       "pret": null
     },
     {
+      "titlu": "Optimizarea respirației în sporturile montane",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "perioada": "27 - 29 mar",
+      "link": "https://carcluj.ro/activitati/optimizarea-respiratiei-sporturile-montane",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
       "titlu": "Pe Vf. Suru cu MTB-ul",
       "zona": "Altele",
       "tip_activitate": "Mountain Bike",
@@ -192,6 +212,17 @@
       "luna": "Iulie",
       "perioada": "01 - 31 iul",
       "link": "https://carcluj.ro/activitati/pe-vf-suru-cu-mtb-ul",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "PROIECȚIE: Calea Dragonului. Odiseea din Carpații României",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": null,
+      "luna": "Februarie",
+      "perioada": "26 feb",
+      "link": "https://carcluj.ro/activitati/proiectie-calea-dragonului-odiseea-din-carpatii-romaniei",
       "sursa": "CAR Cluj",
       "pret": null
     },
@@ -295,6 +326,28 @@
       "ghid": "Eugen - 0755662526"
     },
     {
+      "titlu": "Drumeție începător – intermediar: La brândușe în Apuseni, Piatra Tâlharului",
+      "zona": "Apuseni",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-intermediar-la-branduse-in-apuseni-piatra-talharului/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": null,
+      "ghid": "EUGEN - 0755662526"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: La brândușe în Munții Maramureșului, Vârful Cearcănul",
+      "zona": "Altele",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-intermediar-la-branduse-in-muntii-maramuresului-varful-cearcanul/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": "25 APRILIE",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
       "titlu": "Drumeție începător – intermediar: La brândușe pe Valea Sâmbetei, Făgăraș",
       "zona": "Făgăraș",
       "dificultate": "Începător-Intermediar",
@@ -303,6 +356,17 @@
       "sursa": "Terramont",
       "pret": "198 RON",
       "perioada": "18 APRILIE",
+      "ghid": "ROXANA - 0745136009"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: La Narcise în Tecșești și Piatra Cetii, Trascău",
+      "zona": "Trascău",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Mai",
+      "link": "https://terramont.ro/drumetie-incepator-la-narcise-in-tecsesti-si-piatra-cetii-trascau/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": "9 MAI",
       "ghid": "ROXANA - 0745136009"
     },
     {
@@ -317,6 +381,17 @@
       "ghid": "Cristian - 0733514842"
     },
     {
+      "titlu": "Drumeție începător – intermediar: Primăvara în Munții Cozia",
+      "zona": "Cozia",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-intermediar-primavara-in-muntii-cozia/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": null,
+      "ghid": "EUGEN - 0755662526"
+    },
+    {
       "titlu": "Drumeție începător – intermediar: Rodnei, Vârful Cobășel și Roșu",
       "zona": "Rodnei",
       "dificultate": "Începător-Intermediar",
@@ -328,15 +403,15 @@
       "ghid": "EUGEN - 0755662526"
     },
     {
-      "titlu": "Drumeție începător: La Narcise în Tecșești și Piatra Cetii, Trascău",
-      "zona": "Trascău",
-      "dificultate": "Începător",
-      "luna": "Mai",
-      "link": "https://terramont.ro/drumetie-incepator-la-narcise-in-tecsesti-si-piatra-cetii-trascau/",
+      "titlu": "Drumeție începător – intermediar: Via Transilvanica: Jeica – Gledin – Brâncovenești",
+      "zona": "Via Transilvanica",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-intermediar-via-transilvanica-jeica-gledin-brancovenesti/",
       "sursa": "Terramont",
-      "pret": "198 RON",
-      "perioada": "9 MAI",
-      "ghid": "ROXANA - 0745136009"
+      "pret": "197 RON",
+      "perioada": "4 - 5 APRILIE",
+      "ghid": "Shop - "
     },
     {
       "titlu": "Drumeție începător: Munții și Cabana Ciucaș",
@@ -394,6 +469,17 @@
       "ghid": "Shop - "
     },
     {
+      "titlu": "Drumeție intermediar – experimentat: Vârful Arjana, Munții Cernei și Cazanele Dunării",
+      "zona": "Altele",
+      "dificultate": "Intermediar-Experimentat",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-intermediar-experimentat-varful-arjana-muntii-cernei-si-cazanele-dunarii/",
+      "sursa": "Terramont",
+      "pret": "364 RON",
+      "perioada": "17-19 APRILIE",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
       "titlu": "Drumeție intermediar: Munții Făgăraș, Cabana Negoiu și Muchia Șerbota",
       "zona": "Făgăraș",
       "dificultate": "Intermediar",
@@ -401,7 +487,7 @@
       "link": "https://terramont.ro/drumetie-muntii-fagaras-muchia-serbota/",
       "sursa": "Terramont",
       "pret": "197 RON",
-      "perioada": "29 MAR",
+      "perioada": "28 MAR",
       "ghid": "ALEX - 0742810533"
     },
     {
@@ -413,28 +499,6 @@
       "sursa": "Terramont",
       "pret": "336 RON",
       "perioada": "21-22 MAR",
-      "ghid": "Shop - "
-    },
-    {
-      "titlu": "Drumeție pe rachete de zăpadă: Munții Cindrel, Vârful Rozdești",
-      "zona": "Cindrel",
-      "dificultate": null,
-      "luna": "Februarie",
-      "link": "https://terramont.ro/drumetie-vf-rozdesti-muntii-cindrel/",
-      "sursa": "Terramont",
-      "pret": "198 RON",
-      "perioada": "21 FEB",
-      "ghid": "Roxana - 0745136009"
-    },
-    {
-      "titlu": "Drumeție: Munții Hășmaș, Cabana Piatra Singurațică și Vf. Hășmașul Mare",
-      "zona": "Hășmaș",
-      "dificultate": null,
-      "luna": "Februarie",
-      "link": "https://terramont.ro/muntii-hasmas-piatra-singuratica-hasmasul-mare/",
-      "sursa": "Terramont",
-      "pret": "316 RON",
-      "perioada": "21-22 FEB",
       "ghid": "Shop - "
     },
     {
@@ -458,17 +522,6 @@
       "pret": "331 RON",
       "perioada": "28 feb",
       "ghid": "Alex - 0742810533"
-    },
-    {
-      "titlu": "Drumeție: Via Transilvanica – Brădețelu – Câmpu Cetății",
-      "zona": "Via Transilvanica",
-      "dificultate": null,
-      "luna": "Februarie",
-      "link": "https://terramont.ro/drumetie-via-transilvanica-bradetelu-campu-cetatii/",
-      "sursa": "Terramont",
-      "pret": "194 RON",
-      "perioada": "21 FEBRUARIE",
-      "ghid": "Shop - "
     }
   ]
 }
