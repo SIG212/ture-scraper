@@ -1,10 +1,335 @@
 {
-  "ultima_actualizare": "2026-03-02T06:57:37.672Z",
-  "total_ture": 0,
-  "surse": [],
+  "ultima_actualizare": "2026-03-09T07:01:59.311Z",
+  "total_ture": 28,
+  "surse": [
+    "CAR Cluj",
+    "Terramont"
+  ],
   "statistici": {
-    "pe_sursa": {},
-    "pe_zona": {}
+    "pe_sursa": {
+      "CAR Cluj": 6,
+      "Terramont": 22
+    },
+    "pe_zona": {
+      "Făgăraș": 3,
+      "Trascău": 4,
+      "Altele": 9,
+      "Apuseni": 3,
+      "Retezat": 3,
+      "Călimani": 1,
+      "Via Transilvanica": 3,
+      "Cozia": 1,
+      "Rodnei": 1
+    }
   },
-  "ture": []
+  "ture": [
+    {
+      "titlu": "Atelier alpinism de iarna Muntii Fagaras 12-15 martie 2026",
+      "zona": "Făgăraș",
+      "tip_activitate": "Alpinism",
+      "dificultate": "Experimentat",
+      "luna": "Martie",
+      "perioada": "12-15 mar",
+      "link": "https://carcluj.ro/activitati/atelier-escalada-la-gheata-balea-lac-6-8-martie-2026",
+      "sursa": "CAR Cluj",
+      "pret": "300 RON"
+    },
+    {
+      "titlu": "Cheile Vălișoarei (Circuit) > Munții Trascău",
+      "zona": "Trascău",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Martie",
+      "perioada": "28 mar",
+      "link": "https://carcluj.ro/activitati/muntii-trascau-cheile-valisoarei-circuit",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Ieșire la stâncã - Ampoita",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": null,
+      "luna": "Martie",
+      "perioada": "14 - 15 mar",
+      "link": "https://carcluj.ro/activitati/iesire-la-stanca",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Lansare de carte: „Prin Alpi și prin lume... ” Dinu și Marlene Mititeanu",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": null,
+      "luna": "Martie",
+      "perioada": "26 mar",
+      "link": "https://carcluj.ro/activitati/lansare-de-carte-prin-alpi-si-prin-lume-dinu-si-marlene-mititeanu",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Proiecție: Annapurna Circuit & Lycian Way – zăpezi himalayene și delicii mediteraneene",
+      "zona": "Altele",
+      "tip_activitate": "Drumeție",
+      "dificultate": null,
+      "luna": "Martie",
+      "perioada": "12 mar",
+      "link": "https://carcluj.ro/activitati/annapurna-circuit-lycian-way-zapezi-himalayene-si-delicii-mediteraneene",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Tabăra iernii, Padiș 12-15 martie 2026",
+      "zona": "Apuseni",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "perioada": "12-15 mar",
+      "link": "https://carcluj.ro/activitati/tabara-iernii-padis-12-15-februarie-2026",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: 1 iunie la Cabana Buta în Inima Retezatului, Chitară, Foc de tabără și Brunch",
+      "zona": "Retezat",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Mai",
+      "link": "https://terramont.ro/muntii-retezat-cabana-buta/",
+      "sursa": "Terramont",
+      "pret": "459 RON",
+      "perioada": "30 MAI",
+      "ghid": "Shop - "
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Călimani, Scaunul Domnului",
+      "zona": "Călimani",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-calimani-scaunul-domnului/",
+      "sursa": "Terramont",
+      "pret": "195 RON",
+      "perioada": "14 mar",
+      "ghid": "Eugen - 0755662526"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Circuit Poarta Zmeului, Trascău",
+      "zona": "Trascău",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-circuit-poarta-zmeilor-trascau/",
+      "sursa": "Terramont",
+      "pret": "193 RON",
+      "perioada": null,
+      "ghid": "Eugen - 0755662526"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Descoperă Satele Săsești de pe Via Transilvanica de 1 mai",
+      "zona": "Via Transilvanica",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Mai",
+      "link": "https://terramont.ro/drumetie-via-transilvanica-cloastef-viscri-archita/",
+      "sursa": "Terramont",
+      "pret": "467 RON",
+      "perioada": "1-3 MAI",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: La brândușe în Apuseni, Piatra Tâlharului",
+      "zona": "Apuseni",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-intermediar-la-branduse-in-apuseni-piatra-talharului/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": null,
+      "ghid": "EUGEN - 0755662526"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: La brândușe în Munții Maramureșului, Vârful Cearcănul",
+      "zona": "Altele",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-intermediar-la-branduse-in-muntii-maramuresului-varful-cearcanul/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": "25 APRILIE",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: La brândușe pe Valea Sâmbetei, Făgăraș",
+      "zona": "Făgăraș",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/muntii-fagaras-valea-sambetei/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": "18 APRILIE",
+      "ghid": "ROXANA - 0745136009"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: La Narcise în Tecșești și Piatra Cetii, Trascău",
+      "zona": "Trascău",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Mai",
+      "link": "https://terramont.ro/drumetie-incepator-la-narcise-in-tecsesti-si-piatra-cetii-trascau/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": "9 MAI",
+      "ghid": "ROXANA - 0745136009"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Munții Retezat – Cabana Gențiana, Cabana Pietrele",
+      "zona": "Retezat",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-muntii-retezat-cabana-gentiana-cabana-pietrele/",
+      "sursa": "Terramont",
+      "pret": "196 RON",
+      "perioada": "22 MARTIE",
+      "ghid": "Cristian - 0733514842"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Primăvara în Munții Cozia",
+      "zona": "Cozia",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-intermediar-primavara-in-muntii-cozia/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": null,
+      "ghid": "EUGEN - 0755662526"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Rodnei, Vârful Cobășel și Roșu",
+      "zona": "Rodnei",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-muntii-rodnei-cobasel-rosu/",
+      "sursa": "Terramont",
+      "pret": "197 RON",
+      "perioada": "28 MAR",
+      "ghid": "EUGEN - 0755662526"
+    },
+    {
+      "titlu": "Drumeție începător – intermediar: Via Transilvanica: Jeica – Gledin – Brâncovenești",
+      "zona": "Via Transilvanica",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-intermediar-via-transilvanica-jeica-gledin-brancovenesti/",
+      "sursa": "Terramont",
+      "pret": "197 RON",
+      "perioada": "4 - 5 APRILIE",
+      "ghid": "Shop - "
+    },
+    {
+      "titlu": "Drumeție începător: Munții Trascău, Piatra Craivii",
+      "zona": "Trascău",
+      "dificultate": "Începător",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-incepator-muntii-trascau-piatra-craivii/",
+      "sursa": "Terramont",
+      "pret": "177 RON",
+      "perioada": "4 APRILIE",
+      "ghid": "ROXANA - 0745136009"
+    },
+    {
+      "titlu": "Drumeție începător: Via Transilvanica, Mălâncrav – Biertan",
+      "zona": "Via Transilvanica",
+      "dificultate": "Începător",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-via-transilvanica-malancrav-biertan/",
+      "sursa": "Terramont",
+      "pret": "196 RON",
+      "perioada": null,
+      "ghid": "Shop - "
+    },
+    {
+      "titlu": "Drumeție începători: Circuitul Peșterii cu Ghețar Vârtop – Mărgău, Munții Vlădeasa",
+      "zona": "Altele",
+      "dificultate": "Începător",
+      "luna": "Mai",
+      "link": "https://terramont.ro/circuitul-pesterii-cu-ghetar-vartop-muntii-vladeasa/",
+      "sursa": "Terramont",
+      "pret": "197 RON",
+      "perioada": "9 MAI",
+      "ghid": "EUGEN - 0755662526"
+    },
+    {
+      "titlu": "Drumeție intermediar – experimentat: Circuitul Vârfului Pop Ivan, Munții Maramureșului",
+      "zona": "Altele",
+      "dificultate": "Intermediar-Experimentat",
+      "luna": "Mai",
+      "link": "https://terramont.ro/drumetie-circuitul-varfului-pop-ivan-muntii-maramuresului/",
+      "sursa": "Terramont",
+      "pret": "359 RON",
+      "perioada": "15-17 MAI",
+      "ghid": "Shop - "
+    },
+    {
+      "titlu": "Drumeție intermediar – experimentat: Retezat, Vârful Peleaga",
+      "zona": "Retezat",
+      "dificultate": "Intermediar-Experimentat",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-retezat-varful-peleaga/",
+      "sursa": "Terramont",
+      "pret": "379 RON",
+      "perioada": "13-15 MARTIE",
+      "ghid": "Shop - "
+    },
+    {
+      "titlu": "Drumeție intermediar – experimentat: Vârful Arjana, Munții Cernei și Cazanele Dunării",
+      "zona": "Altele",
+      "dificultate": "Intermediar-Experimentat",
+      "luna": "Aprilie",
+      "link": "https://terramont.ro/drumetie-intermediar-experimentat-varful-arjana-muntii-cernei-si-cazanele-dunarii/",
+      "sursa": "Terramont",
+      "pret": "364 RON",
+      "perioada": "17-19 APRILIE",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
+      "titlu": "Drumeție intermediar: 1 iunie în Inima Apusenilor, Cetățile Ponorului, Cheile Galbenei, Focul Viu, Lumea Pierdută și Cetățile Rădesei",
+      "zona": "Apuseni",
+      "dificultate": "Intermediar",
+      "luna": "Mai",
+      "link": "https://terramont.ro/muntii-apuseni-cetatile-ponorului-cheile-galbenei/",
+      "sursa": "Terramont",
+      "pret": "467 RON",
+      "perioada": "29 MAI",
+      "ghid": "Shop - "
+    },
+    {
+      "titlu": "Drumeție intermediar: Flori de primăvară în Buila Vânturarița",
+      "zona": "Altele",
+      "dificultate": "Intermediar",
+      "luna": "Mai",
+      "link": "https://terramont.ro/drumetie-muntii-buila-vanturarita-2/",
+      "sursa": "Terramont",
+      "pret": "366 RON",
+      "perioada": "8-10 MAI",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
+      "titlu": "Drumeție intermediar: Munții Făgăraș, Cabana Negoiu și Muchia Șerbota",
+      "zona": "Făgăraș",
+      "dificultate": "Intermediar",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-muntii-fagaras-muchia-serbota/",
+      "sursa": "Terramont",
+      "pret": "197 RON",
+      "perioada": "28 MAR",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
+      "titlu": "Drumeție intermediar: Vârful Toaca și Podul Suspendat din Cheile Bicazului (Bicăjel)",
+      "zona": "Altele",
+      "dificultate": "Intermediar",
+      "luna": "Martie",
+      "link": "https://terramont.ro/drumetie-ceahlau-varful-toaca/",
+      "sursa": "Terramont",
+      "pret": "336 RON",
+      "perioada": "20-22 MAR",
+      "ghid": "Shop - "
+    }
+  ]
 }
