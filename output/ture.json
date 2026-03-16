@@ -1,6 +1,6 @@
 {
-  "ultima_actualizare": "2026-03-09T07:01:59.311Z",
-  "total_ture": 28,
+  "ultima_actualizare": "2026-03-16T07:17:23.184Z",
+  "total_ture": 35,
   "surse": [
     "CAR Cluj",
     "Terramont"
@@ -8,37 +8,41 @@
   "statistici": {
     "pe_sursa": {
       "CAR Cluj": 6,
-      "Terramont": 22
+      "Terramont": 29
     },
     "pe_zona": {
-      "Făgăraș": 3,
+      "Via Transilvanica": 4,
       "Trascău": 4,
-      "Altele": 9,
+      "Pădurea Craiului": 1,
+      "Măcin": 1,
+      "Altele": 8,
+      "Rodnei": 4,
+      "Retezat": 4,
       "Apuseni": 3,
-      "Retezat": 3,
-      "Călimani": 1,
-      "Via Transilvanica": 3,
+      "Făgăraș": 2,
       "Cozia": 1,
-      "Rodnei": 1
+      "Ciucaș": 1,
+      "Bucegi": 1,
+      "Parâng": 1
     }
   },
   "ture": [
     {
-      "titlu": "Atelier alpinism de iarna Muntii Fagaras 12-15 martie 2026",
-      "zona": "Făgăraș",
-      "tip_activitate": "Alpinism",
-      "dificultate": "Experimentat",
-      "luna": "Martie",
-      "perioada": "12-15 mar",
-      "link": "https://carcluj.ro/activitati/atelier-escalada-la-gheata-balea-lac-6-8-martie-2026",
+      "titlu": "2 zile pe Via Transilvanica in Tinutul de sus",
+      "zona": "Via Transilvanica",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Aprilie",
+      "perioada": "03 - 05 Apr",
+      "link": "https://carcluj.ro/activitati/2-zile-pe-transilvanica-tinutul-de-sus",
       "sursa": "CAR Cluj",
-      "pret": "300 RON"
+      "pret": "80 RON"
     },
     {
       "titlu": "Cheile Vălișoarei (Circuit) > Munții Trascău",
       "zona": "Trascău",
       "tip_activitate": "Drumeție",
-      "dificultate": "Intermediar",
+      "dificultate": "Experimentat",
       "luna": "Martie",
       "perioada": "28 mar",
       "link": "https://carcluj.ro/activitati/muntii-trascau-cheile-valisoarei-circuit",
@@ -46,13 +50,24 @@
       "pret": null
     },
     {
-      "titlu": "Ieșire la stâncã - Ampoita",
-      "zona": "Altele",
+      "titlu": "Circuit pe creastă in Pădurea Craiului.",
+      "zona": "Pădurea Craiului",
       "tip_activitate": "Drumeție",
-      "dificultate": null,
+      "dificultate": "Începător",
       "luna": "Martie",
-      "perioada": "14 - 15 mar",
-      "link": "https://carcluj.ro/activitati/iesire-la-stanca",
+      "perioada": "21 - 22 mar",
+      "link": "https://carcluj.ro/activitati/circuit-pe-creasta-padurea-craiului",
+      "sursa": "CAR Cluj",
+      "pret": null
+    },
+    {
+      "titlu": "Explorarea Munților Măcin: Paștele pe doua roți.",
+      "zona": "Măcin",
+      "tip_activitate": "Drumeție",
+      "dificultate": "Intermediar",
+      "luna": "Aprilie",
+      "perioada": "10 - 13 Apr",
+      "link": "https://carcluj.ro/activitati/explorarea-muntilor-macin-pastele-pe-doua-roti",
       "sursa": "CAR Cluj",
       "pret": null
     },
@@ -68,26 +83,26 @@
       "pret": null
     },
     {
-      "titlu": "Proiecție: Annapurna Circuit & Lycian Way – zăpezi himalayene și delicii mediteraneene",
+      "titlu": "Optimizarea respirației în sporturile montane",
       "zona": "Altele",
-      "tip_activitate": "Drumeție",
-      "dificultate": null,
-      "luna": "Martie",
-      "perioada": "12 mar",
-      "link": "https://carcluj.ro/activitati/annapurna-circuit-lycian-way-zapezi-himalayene-si-delicii-mediteraneene",
-      "sursa": "CAR Cluj",
-      "pret": null
-    },
-    {
-      "titlu": "Tabăra iernii, Padiș 12-15 martie 2026",
-      "zona": "Apuseni",
       "tip_activitate": "Drumeție",
       "dificultate": "Începător",
       "luna": "Martie",
-      "perioada": "12-15 mar",
-      "link": "https://carcluj.ro/activitati/tabara-iernii-padis-12-15-februarie-2026",
+      "perioada": "27 - 29 mar",
+      "link": "https://carcluj.ro/activitati/optimizarea-respiratiei-sporturile-montane",
       "sursa": "CAR Cluj",
-      "pret": null
+      "pret": "500 RON"
+    },
+    {
+      "titlu": "Drumeți începător – intermediar: Poiana Narciselor, Munții Rodnei",
+      "zona": "Rodnei",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Iunie",
+      "link": "https://terramont.ro/drumetie-poiana-cu-narcise-din-muntii-rodnei/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": "6 IUNIE",
+      "ghid": "EUGEN - 0755662526"
     },
     {
       "titlu": "Drumeție începător – intermediar: 1 iunie la Cabana Buta în Inima Retezatului, Chitară, Foc de tabără și Brunch",
@@ -98,18 +113,7 @@
       "sursa": "Terramont",
       "pret": "459 RON",
       "perioada": "30 MAI",
-      "ghid": "Shop - "
-    },
-    {
-      "titlu": "Drumeție începător – intermediar: Călimani, Scaunul Domnului",
-      "zona": "Călimani",
-      "dificultate": "Începător-Intermediar",
-      "luna": "Martie",
-      "link": "https://terramont.ro/drumetie-calimani-scaunul-domnului/",
-      "sursa": "Terramont",
-      "pret": "195 RON",
-      "perioada": "14 mar",
-      "ghid": "Eugen - 0755662526"
+      "ghid": null
     },
     {
       "titlu": "Drumeție începător – intermediar: Circuit Poarta Zmeului, Trascău",
@@ -200,6 +204,17 @@
       "ghid": "EUGEN - 0755662526"
     },
     {
+      "titlu": "Drumeție începător – intermediar: Rhododendron Retezat, Circuitul Lacurilor cu Nume de Fete, Lia – Ana – Bucura – Florica – Viorica",
+      "zona": "Retezat",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Iunie",
+      "link": "https://terramont.ro/drumetie-rodnei-circuitul-lacurilor-muntii-retezat/",
+      "sursa": "Terramont",
+      "pret": "202 RON",
+      "perioada": "20 IUNIE",
+      "ghid": "ROXANA - 0745136009"
+    },
+    {
       "titlu": "Drumeție începător – intermediar: Rodnei, Vârful Cobășel și Roșu",
       "zona": "Rodnei",
       "dificultate": "Începător-Intermediar",
@@ -219,7 +234,18 @@
       "sursa": "Terramont",
       "pret": "197 RON",
       "perioada": "4 - 5 APRILIE",
-      "ghid": "Shop - "
+      "ghid": null
+    },
+    {
+      "titlu": "Drumeție începător-intermediar: La Rhododendron în Munții Rodnei, Lacurile Lala",
+      "zona": "Rodnei",
+      "dificultate": "Începător-Intermediar",
+      "luna": "Iunie",
+      "link": "https://terramont.ro/drumetie-la-rhododendron-muntii-rodnei-lacurile-lala/",
+      "sursa": "Terramont",
+      "pret": "203 RON",
+      "perioada": "13 IUNIE",
+      "ghid": "EUGEN - 0755662526"
     },
     {
       "titlu": "Drumeție începător: Munții Trascău, Piatra Craivii",
@@ -233,6 +259,17 @@
       "ghid": "ROXANA - 0745136009"
     },
     {
+      "titlu": "Drumeție începător: Rhododendron în Munții Ciucaș",
+      "zona": "Ciucaș",
+      "dificultate": "Începător",
+      "luna": "Iunie",
+      "link": "https://terramont.ro/drumetie-incepator-rhododendron-in-muntii-ciucas/",
+      "sursa": "Terramont",
+      "pret": "343 RON",
+      "perioada": "13-14 IUNIE",
+      "ghid": "VIO - 0741777450"
+    },
+    {
       "titlu": "Drumeție începător: Via Transilvanica, Mălâncrav – Biertan",
       "zona": "Via Transilvanica",
       "dificultate": "Începător",
@@ -241,7 +278,7 @@
       "sursa": "Terramont",
       "pret": "196 RON",
       "perioada": null,
-      "ghid": "Shop - "
+      "ghid": null
     },
     {
       "titlu": "Drumeție începători: Circuitul Peșterii cu Ghețar Vârtop – Mărgău, Munții Vlădeasa",
@@ -263,18 +300,29 @@
       "sursa": "Terramont",
       "pret": "359 RON",
       "perioada": "15-17 MAI",
-      "ghid": "Shop - "
+      "ghid": null
     },
     {
-      "titlu": "Drumeție intermediar – experimentat: Retezat, Vârful Peleaga",
+      "titlu": "Drumeție intermediar – experimentat: Circuitul Vârfului Retezat, Lacul Ștevia – Culmea Prelucele",
       "zona": "Retezat",
       "dificultate": "Intermediar-Experimentat",
-      "luna": "Martie",
-      "link": "https://terramont.ro/drumetie-retezat-varful-peleaga/",
+      "luna": "Iunie",
+      "link": "https://terramont.ro/drumetie-intermediar-experimentat-circuitul-varfului-retezat-lacul-stevia-culmea-prelucele/",
       "sursa": "Terramont",
-      "pret": "379 RON",
-      "perioada": "13-15 MARTIE",
-      "ghid": "Shop - "
+      "pret": "209 RON",
+      "perioada": "13 IUNIE",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
+      "titlu": "Drumeție intermediar – experimentat: Rhododendron Munții Bucegi, Circuit Muchia Țigănești – Valea Ciubotei și Amfiteatrul Transilvaniei",
+      "zona": "Bucegi",
+      "dificultate": "Intermediar-Experimentat",
+      "luna": "Iunie",
+      "link": "https://terramont.ro/https-terramont-ro-drumetie-muntii-bucegi-muchia-tiganesti-2-ovabrw_adults1/",
+      "sursa": "Terramont",
+      "pret": "367 RON",
+      "perioada": "19 - 21 IUNIE",
+      "ghid": "ALEX - 0742810533"
     },
     {
       "titlu": "Drumeție intermediar – experimentat: Vârful Arjana, Munții Cernei și Cazanele Dunării",
@@ -296,7 +344,7 @@
       "sursa": "Terramont",
       "pret": "467 RON",
       "perioada": "29 MAI",
-      "ghid": "Shop - "
+      "ghid": null
     },
     {
       "titlu": "Drumeție intermediar: Flori de primăvară în Buila Vânturarița",
@@ -321,6 +369,17 @@
       "ghid": "ALEX - 0742810533"
     },
     {
+      "titlu": "Drumeție intermediar: Rhododendron, Vârful Pietrosul și Lacul Iezer, Rodnei",
+      "zona": "Rodnei",
+      "dificultate": "Intermediar",
+      "luna": "Iunie",
+      "link": "https://terramont.ro/drumetie-rhododendron-muntii-rodnei-pietrosu/",
+      "sursa": "Terramont",
+      "pret": "198 RON",
+      "perioada": "20 IUNIE",
+      "ghid": "EUGEN - 0755662526"
+    },
+    {
       "titlu": "Drumeție intermediar: Vârful Toaca și Podul Suspendat din Cheile Bicazului (Bicăjel)",
       "zona": "Altele",
       "dificultate": "Intermediar",
@@ -329,7 +388,29 @@
       "sursa": "Terramont",
       "pret": "336 RON",
       "perioada": "20-22 MAR",
-      "ghid": "Shop - "
+      "ghid": null
+    },
+    {
+      "titlu": "Dumeție intermediar: Circuit Munții Parâng, Vf. Găuri – Lacul Gâlcescu",
+      "zona": "Parâng",
+      "dificultate": "Intermediar",
+      "luna": "Iunie",
+      "link": "https://terramont.ro/drumetie-muntii-parang-lacul-galcesu-si-varful-gauri/",
+      "sursa": "Terramont",
+      "pret": "203 RON",
+      "perioada": "6 IUNIE",
+      "ghid": "ALEX - 0742810533"
+    },
+    {
+      "titlu": "Weekend de aventură în Apuseni!",
+      "zona": "Apuseni",
+      "dificultate": null,
+      "luna": "Martie",
+      "link": "https://terramont.ro/weekend-de-aventura-in-apuseni/",
+      "sursa": "Terramont",
+      "pret": "150 RON",
+      "perioada": "20-22 mar",
+      "ghid": "GEORGE - 0752452555"
     }
   ]
 }
